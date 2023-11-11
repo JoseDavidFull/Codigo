@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(15, 15, 31);
+    display: flex;
+    margin: 150px 0px 0px 150px;
+}
+
+.Fondo{
+    width: 180px;
+    height: 170px;
+    background-color: rgb(68, 64, 87);
+    display: flex;
+    justify-content: end;
+}
+
+.Izquierdo{
+    
+}
+
+
+
+.Fondo * {
+    position: absolute;
+}

@@ -1,0 +1,11 @@
+
+input{
+    border-radius: 20px;
+}
+.mostrar{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    background-color: aqua;
+}

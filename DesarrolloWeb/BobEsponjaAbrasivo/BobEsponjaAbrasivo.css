@@ -1,0 +1,249 @@
+body{
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cuerpo{
+  background-color: rgb(9, 34, 9);
+  width: 170px;
+  height: 250px;
+  margin: 150px 0px 0px 150px;
+}
+
+.ojo {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 45px 0px 0px 35px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.ojo1 {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 45px 0px 0px 83px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+
+.iris{
+  background-color: skyblue;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 55px 0px 0px 45px;
+}
+
+.iris1{
+  background-color: skyblue;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 55px 0px 0px 95px;
+  
+}
+
+.pupila{
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin: 60px 0px 0px 50px;
+}
+
+.pupila1{
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin: 60px 0px 0px 100px;
+}
+
+.pestaña{
+  background-color: black;
+  width: 50px;
+  height: 15px;
+  margin: 30px 0px 0px 35px;
+  transform: rotate(20deg);
+}
+
+.pestaña1{
+  background-color: black;
+  width: 50px;
+  height: 15px;
+  margin: 30px 0px 0px 90px;
+  transform: rotate(160deg);
+}
+
+.nariz{
+  background-color:  rgb(9, 34, 9);
+  width: 10px;
+  height: 30px;
+  margin: 85px 0px 0px 78px;
+  border-style: solid;
+  border-width: 3px;
+  color: rgb(13, 13, 13);
+  border-radius: 150px;
+  border-bottom: 6px solid transparent;
+}
+
+.boca {
+  background-color: black;
+  width: 80px;
+  height: 2px;
+  margin: 140px 0px 0px 50px ;
+  border-radius: 50% ;
+}
+
+.diente{
+  background-color: white;
+  margin: 140px 0px 0px 90px;
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.diente1{
+  background-color: white;
+  margin: 140px 0px 0px 75px;
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.pantalon{
+  background-color: rgb(99, 49, 13);
+  width: 166px;
+  height: 29px;
+  margin: 240px 0px 0px 0px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.pantalon1{
+  background-color: rgb(99, 49, 13);
+  width: 20px;
+  height: 25px;
+  margin: 0px 0px 0px 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  margin: 271px 0px 0px 45px;
+}
+
+.pantalon2{
+  background-color: rgb(99, 49, 13);
+  width: 20px;
+  height: 25px;
+  margin: 0px 0px 0px 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  margin: 271px 0px 0px 100px;
+}
+
+.sinturon{
+  background-color: black;
+  width: 15px;
+  height: 10px;
+  margin: 260px 0px 0px 15px;
+}
+
+.sinturon1{
+  background-color: black;
+  width: 15px;
+  height: 10px;
+  margin: 260px 0px 0px 50px;
+}
+
+.sinturon2{
+  background-color: black;
+  width: 15px;
+  height: 10px;
+  margin: 260px 0px 0px 100px;
+}
+
+.sinturon3{
+  background-color: black;
+  width: 15px;
+  height: 10px;
+  margin: 260px 0px 0px 140px;
+}
+.camisa{
+  background-color: rgb(255, 255, 255);
+  width: 166px;
+  height: 29px;
+  margin: 210px 0px 0px 0px;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.corbata{
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  margin: 210px 0px 0px 78px;
+  border-radius: 10px 10px 10px 10px;
+  border-width: 2px;
+  border-style: solid; 
+ }
+
+.corbata1 {
+  width: 20px; 
+  height: 20px;
+  margin: 225px 0px 0px 71px;
+  border: 3px solid rgb(0, 0, 0); 
+  background: red;
+  transform: rotate(45deg);
+}
+
+.rodillas{
+  background-color: yellow;
+  width: 10px;
+  height: 40px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  margin: 298px 0px 0px 105px;
+}
+
+.rodillas1{
+  background-color: yellow;
+  width: 10px;
+  height: 40px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  margin: 298px 0px 0px 50px;
+}
+
+.zapato{
+  background-color: black;
+  width: 20px;
+  height: 15px;
+  border-radius: 20%;
+  margin: 340px 0px 0px 48px;
+}
+
+.zapato1{
+  background-color: black;
+  width: 20px;
+  height: 15px;
+  border-radius: 20%;
+  margin: 340px 0px 0px 102px;
+}
+
+.Cuerpo * {
+  position: absolute;
+}
+

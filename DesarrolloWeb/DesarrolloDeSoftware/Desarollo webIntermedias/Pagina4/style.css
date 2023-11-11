@@ -1,0 +1,9 @@
+input{
+    border-radius: 20px;
+}
+
+#resultado:hover{
+    box-shadow: 10px 10px 10px 0px rgb(20, 3, 31);
+    color: rgb(4, 69, 71);
+    text-shadow: 5px 5px 5px white;
+}

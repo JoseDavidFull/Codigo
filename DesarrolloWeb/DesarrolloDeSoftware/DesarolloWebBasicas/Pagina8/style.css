@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(231, 231, 231);
+    margin: 120px 0px 0px 250px;
+}
+
+
+.Fondo{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 350px;
+    border-radius: 10px 10px 100px 10px;
+}
+
+.hove{
+    box-shadow: 5px 5px px 0px red;
+}

@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(79, 158, 163);
+}
+
+.input{
+    background-color: magenta;
+}
+
+.row{
+    background-color: crimson;
+    display: flex;
+    right: 50px;
+}

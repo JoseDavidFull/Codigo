@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(245, 238, 229);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Fondo{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.Title{
+    margin: -10px 0px 0px 160px;
+    font-size: 10px;
+}
+
+.Subtitle{
+    margin: 0px 0px 0px 190px;
+    font-size: 15px;
+}
+
+
+.Fondo * {
+    position: absolute;
+}

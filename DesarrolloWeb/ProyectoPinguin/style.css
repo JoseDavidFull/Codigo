@@ -1,0 +1,54 @@
+body{
+  background-color: rgb(240, 116, 116);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.Cuerpo{
+  background-color: black;
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+}
+
+.ojo1{
+  background-color: white;
+  height: 100px;
+  width: 70px;
+  border-radius: 50% / 65% 65% 40% 40%;
+  transform: rotate(335deg);
+  margin: 30px 0px 0px 40px;
+}
+
+.ojo2{
+  background-color: white;
+  height: 100px;
+  width: 70px;
+  border-radius: 50% / 65% 65% 40% 40%;
+  transform: rotate(18deg);
+  margin: 30px 0px 0px 140px;
+}
+
+.iris1{
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  margin: 80px 0px 0px 75px;
+  border-radius: 55px;
+}
+
+.iris2{
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  margin: 80px 0px 0px 145px;
+  border-radius: 55px;
+}
+
+
+.Cuerpo * {
+  position: absolute;
+}
+

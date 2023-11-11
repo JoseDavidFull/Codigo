@@ -1,0 +1,25 @@
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.Fondo{
+    background-color: rgb(53, 255, 3);
+    width: 500px;
+    height: 600px;
+}
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.Form{
+    display: flex;
+    justify-content: center;
+}
+
+.Resultado{
+    margin: 300px 0px 0px -60px;
+}

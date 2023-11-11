@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(49, 49, 49);
+}
+
+.formulario{
+    margin: 300px 0px 0px 400px;
+}
+
+input{
+    background: transparent;
+    opacity: 1.5;
+}
+
+.candado{
+    margin: 0px 0px 0px 0px;
+}
+
+.form * {
+    position: absolute;
+}

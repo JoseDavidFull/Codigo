@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+void formatear(short h,short m,short s){
+	if(h<=9 and m<=9 and s<=9){
+		cout<<"0"<<h<<":"<<"0"<<m<<":"<<"0"<<s<<"\n";
+	}
+	else{
+		cout<<h<<":"<<m<<":"<<s<<"\n";
+	}
+}
+
+
+
+int main() {
+	short h,m,s;
+	cin>>h>>m>>s;
+	formatear(h,m,s);
+	return 0;
+}
+

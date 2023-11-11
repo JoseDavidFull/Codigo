@@ -1,0 +1,14 @@
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\bin\Debug\net6.0\PooEstructuraDeDatos.exe
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\bin\Debug\net6.0\PooEstructuraDeDatos.deps.json
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\bin\Debug\net6.0\PooEstructuraDeDatos.runtimeconfig.json
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\bin\Debug\net6.0\PooEstructuraDeDatos.dll
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\bin\Debug\net6.0\PooEstructuraDeDatos.pdb
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\PooEstructuraDeDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\PooEstructuraDeDatos.AssemblyInfoInputs.cache
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\PooEstructuraDeDatos.AssemblyInfo.cs
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\PooEstructuraDeDatos.csproj.CoreCompileInputs.cache
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\PooEstructuraDeDatos.dll
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\refint\PooEstructuraDeDatos.dll
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\PooEstructuraDeDatos.pdb
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\PooEstructuraDeDatos.genruntimeconfig.cache
+C:\Programacion\C++\TrabajoPlantasVsZombie\PooEstructuraDeDatos\PooEstructuraDeDatos\obj\Debug\net6.0\ref\PooEstructuraDeDatos.dll

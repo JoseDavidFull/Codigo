@@ -1,0 +1,51 @@
+.img1{
+    margin: 50px 0px 0px 50px;
+}
+
+.img2{
+    margin: 50px 0px 0px 500px;
+}
+
+.img3{
+    margin: 50px 0px 0px 1000px;
+}
+
+.img4{
+    margin: 600px 0px 0px 50px;
+}
+
+.img5{
+    margin: 600px 0px 0px 500px;
+}
+
+.img6{
+    margin: 600px 0px 0px 1000px;
+}
+
+.img7{
+    margin: 1150px 0px 0px 50px;
+}
+
+.img8{
+    margin: 1150px 0px 0px 500px;
+}
+
+.img9{
+    margin: 1150px 0px 0px 1000px;
+}
+
+.img10{
+    margin: 1700px 0px 0px 50px;
+}
+
+.img11{
+    margin: 1700px 0px 0px 500px;
+}
+
+.img12{
+    margin: 1700px 0px 0px 1000px;
+}
+
+.Container * {
+    position: absolute;
+}

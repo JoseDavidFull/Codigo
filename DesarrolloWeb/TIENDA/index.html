@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIENDA DAVID</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="Imagen/LogoTienda.png" rel="icon">
+</head>
+<body>
+    <script src="index.js"></script>
+    <div class="Grafico">
+        <div class="Producto">
+            <h3>Producto</h3>
+            <input type="text" id="nombreProducto" onkeyup="mostrarSugerencias()">
+            <div id="sugerencias"></div> 
+            <button onclick="buscarProducto()">Buscar</button>
+        </div>
+        
+        <div class="Precio">
+            <h3>Precio</h3>
+            <div id="resultado"></div>
+        </div>
+        
+        <div class="Cantidad">
+            <h3>Cantidad</h3>
+            <input type="number" id="cantidad">
+            <button onclick="CalcularPrecio()">Calcular</button>
+        </div>
+        <div class="Total">
+            <h3>Total</h3>
+            <div id="ResultadoPrecio"></div>
+        </div>
+    </div>
+</body>
+</html>

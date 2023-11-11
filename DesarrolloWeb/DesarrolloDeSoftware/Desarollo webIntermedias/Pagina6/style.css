@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(133, 244, 248);
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    background: transparent;
+    border-radius: 5px ;
+}

@@ -1,0 +1,56 @@
+.container-xxl{
+    background-color: black;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logo{
+    display: inline-flex;
+    margin: 20px 0px 0px 80px;
+}
+
+.subtitulo{
+    margin: 40px 0px 0px 300px;
+    color: black;
+    font-size: 50px;
+    display: flex;
+    width: 500px;
+    height: 50px;
+    justify-content: space-evenly;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0pox 0px 0px;
+}
+
+.MenWoman{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0px 0px 0px;
+    border-radius: 50px;
+}
+
+.Sexo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Historia{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 60px; 
+}
+
+
+.container-fluid * {
+    position: absolute;
+}

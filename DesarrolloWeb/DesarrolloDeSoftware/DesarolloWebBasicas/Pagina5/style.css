@@ -1,0 +1,37 @@
+.Fondo{
+    width: auto;
+    height: 2000px;
+    background-color: rgb(135, 34, 182);
+    box-shadow: 2px 10px 20px 0 black;
+    border-radius: 10px;
+}
+
+.titleI{
+    margin: 20px 0px 0px 10px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.title{
+    margin: 60px 0px 0px 420px;
+    font-size: 30px;
+    color: black;
+    text-shadow: 5px 5px 5px white;
+
+}
+
+.titleD{
+    margin: 20px 0px 0px 860px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.img{
+    margin: 180px 0px 0px 400px;
+    box-shadow: 20px 10px 30px 0 rgb(8, 8, 8);
+}
+
+
+.Fondo *{
+    position: absolute;
+}
