@@ -301,10 +301,34 @@ print(sum(suma))
 
 '''
 
+'''Dadas dos matrices matrix1 y matrix2, calcula el producto de matrices.'''
 
-'''Operaciones matriciales: Realiza una multiplicación de dos matrices utilizando NumPy.'''
+'''Crea una lista vacía llamada mi_lista y añade los elementos 1, 2, y 3.
+Extiende la lista agregando los elementos 4 y 5.
+Elimina el elemento 3 de la lista.
 
-def mostrar():
-    return "Hola Como estas"
+mi_lista = list([])
 
-print(mostrar())
+mi_lista.append([1,2,3])
+mi_lista.extend([4,5])
+mi_lista.pop(0)
+ 
+print(mi_lista)'''
+
+'''
+Operaciones en Listas:
+
+Dada una lista de números, encuentra el máximo y el mínimo.
+Calcula la suma de todos los elementos en una lista.
+Cuenta cuántas veces aparece un elemento específico en una lista.
+'''
+
+lista = list([0,1,2,3,4,5,6,7,8,9,10])
+suma = 0
+for i in lista:
+    suma+=i
+
+print(suma)
+
+print(min(lista))
+print(max(lista))

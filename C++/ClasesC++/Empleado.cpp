@@ -29,7 +29,7 @@ void Empleado::obtener(){
 
 
 
-int main(int argc, char *argv[]) {
+int main() {
 	Empleado mostrar = Empleado("David",25,30000);
 	mostrar.obtener();
 	return 0;

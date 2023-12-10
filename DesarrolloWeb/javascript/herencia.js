@@ -643,3 +643,17 @@ console.log(MostrarTarjeta);
 const MostrarPaypal = new PayPal(10000,15963214567);
 console.log(MostrarPaypal);*/
 
+
+class Perro{
+    constructor(nombre,edad){
+        this.nombre = nombre
+        this.edad = edad
+    }
+    Metod (){
+        return `${this.nombre} ${this.edad}`
+    }
+}
+
+const objeto = new Perro("Douglas",25)
+
+console.log(objeto.Metod());
