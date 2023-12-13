@@ -644,16 +644,37 @@ const MostrarPaypal = new PayPal(10000,15963214567);
 console.log(MostrarPaypal);*/
 
 
-class Perro{
-    constructor(nombre,edad){
-        this.nombre = nombre
-        this.edad = edad
+/*Desarrolla una clase base Empleado con atributos como nombre y salario. 
+Crea clases derivadas Gerente y Trabajador que hereden de Empleado. 
+Implementa métodos getter y setter para el nombre y el salario en cada clase.*/
+
+
+class Empleado{
+    constructor(nombre,salario){
+        this.nombre = nombre;
+        this.salario = salario;
     }
-    Metod (){
-        return `${this.nombre} ${this.edad}`
+    Mostrar = () =>{ // funcion flecha
+        return `Nombre ${this.nombre} Edad ${this.salario}`
     }
 }
 
-const objeto = new Perro("Douglas",25)
 
-console.log(objeto.Metod());
+class Gerente extends Empleado{
+    constructor(nombre,salario,edad){
+        super(nombre,salario);
+        this.edad = edad;
+    }
+    MostrarGerente = () =>{
+        this.Mostrar();
+        return `Edad ${this.edad}`
+    }
+
+}
+
+
+
+Mostrar = new Gerente("David",10000,35);
+console.log(Mostrar.MostrarGerente());
+
+

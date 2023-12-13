@@ -321,7 +321,7 @@ Operaciones en Listas:
 Dada una lista de números, encuentra el máximo y el mínimo.
 Calcula la suma de todos los elementos en una lista.
 Cuenta cuántas veces aparece un elemento específico en una lista.
-'''
+
 
 lista = list([0,1,2,3,4,5,6,7,8,9,10])
 suma = 0
@@ -332,3 +332,34 @@ print(suma)
 
 print(min(lista))
 print(max(lista))
+'''
+
+
+'''
+Crea dos matrices NumPy de tamaño (3, 3). La primera matriz 
+debe contener los números del 1 al 9, y la segunda matriz 
+debe contener los números del 10 al 18. A continuación, 
+concatena las dos matrices en una sola matriz de tamaño (6, 3).
+
+import numpy as np
+
+matriz1 = np.arange(1,10).reshape(3, 3)
+
+matriz2 = np.arange(10, 19).reshape(3, 3)
+
+concatenacion = np.concatenate((matriz1, matriz2))
+print(concatenacion)
+'''
+
+'''Crea dos matrices NumPy de tamaño (2, 2). La primera matriz 
+debe contener los números del 1 al 4, y la segunda matriz debe 
+contener los números del 5 al 8. A continuación, concatena las
+ dos matrices en una sola matriz de tamaño (4, 2), de forma que 
+ la primera matriz quede en la primera fila y la segunda matriz 
+ quede en la segunda fila.'''
+import numpy as np
+matriz1 = np.arange(1,5).reshape(2,2)
+matriz2 = np.arange(5,9).reshape(2,2)
+concatenar = np.vstack((matriz1, matriz2))
+print(concatenar)
+
