@@ -291,15 +291,7 @@ NumsAleatorios = np.random.randint(0,25,25).reshape(5,5)
 
 print(NumsAleatorios)'''
 
-'''Suma de elementos: Calcula la suma de todos 
-los elementos en un array NumPy.
 
-import numpy as np
-
-suma = np.arange(1,26)
-print(sum(suma))
-
-'''
 
 '''Dadas dos matrices matrix1 y matrix2, calcula el producto de matrices.'''
 
@@ -315,20 +307,147 @@ mi_lista.pop(0)
  
 print(mi_lista)'''
 
+
 '''
-Operaciones en Listas:
+Manipulación de Forma y Concatenación:
 
-Dada una lista de números, encuentra el máximo y el mínimo.
-Calcula la suma de todos los elementos en una lista.
-Cuenta cuántas veces aparece un elemento específico en una lista.
+Cambia la forma de un arreglo 1D a una matriz 2x3.
+Concatena dos matrices horizontalmente.
+Agrega una nueva dimensión a un arreglo existente.
+import numpy as np
+
+
+array1 = np.arange(1,7).reshape(2,3)
+array2 = np.arange(7,13).reshape(2,3)
+
+concatenar = np.concatenate(( array1, array2), axis=1)
+print(concatenar)'''
+
+
 '''
 
-lista = list([0,1,2,3,4,5,6,7,8,9,10])
-suma = 0
-for i in lista:
-    suma+=i
+Crea una lista con los números del 1 al 5.
+Añade el número 6 al final de la lista.
+Inserta el número 0 al principio de la lista.
 
-print(suma)
+lista = list([1,2,3,4,5])
+lista.append(6)
+lista.insert(0,0)
+print(lista)
+'''
 
-print(min(lista))
-print(max(lista))
+
+'''import numpy as np
+
+m = np.array([[1,2,3],[4,5,6],[7,8,9]])
+
+print(m)
+print("\n")
+print(np.ptp(m)) #ptp agarra el punto maximo y resta el punto minimo 9-1 = 8
+
+'''
+
+'''Escribe un programa en Python que utilice la función ptp
+ para calcular el rango de un arreglo unidimensional.
+import numpy as np
+
+uni = np.array([1,2,3,4,5,6,7,8,9,10])
+print(np.ptp(uni))
+'''
+
+'''Crea un arreglo bidimensional y utiliza la función amin para 
+encontrar el valor mínimo en todo el arreglo.
+
+import numpy as np
+
+arreglo = np.arange(1,26).reshape(5,5)
+
+print(arreglo)
+print("\n")
+print(np.amin(arreglo))
+
+'''
+
+'''Desarrolla un código que emplee la función amax para 
+determinar el valor máximo en una matriz tridimensional.
+
+import numpy as np
+
+tridimensional = np.arange(1,126).reshape(5,5,5)
+print(np.amax(tridimensional))'''
+
+'''Implementa un script en Python que utilice la función mean 
+para calcular la media de un arreglo unidimensional
+
+import numpy as np
+
+arreglo = np.array([1,2,3,4,5,6,7,8,9,10])
+print(np.median(arreglo))'''
+
+'''
+Desarrolla un programa que utilice la función axis junto con otras funciones NumPy 
+para calcular la suma a lo largo del eje especificado en un arreglo tridimensional,
+ y luego encuentre el valor máximo en el resultado obtenido.
+
+import numpy as np
+
+tridimensional = np.arange(1,126).reshape(5,5,5)
+print("Suma de las columnas")
+print(np.sum(tridimensional, axis=1))
+
+print("Suma de las filas")
+print(np.sum(tridimensional, axis=0))'''
+
+
+'''
+Implementa un código en Python que utilice la función axis para calcular la media a 
+lo largo del eje 0 y la desviación estándar a lo largo del eje 1 en un arreglo tridimensional.
+import numpy as np
+
+tridimensional = np.arange(1,28).reshape(3,3,3)
+print(tridimensional)
+print(np.median(tridimensional, axis=0))'''
+
+'''Escribe una función en Python que tome una lista de números como entrada 
+y devuelva una nueva lista que contenga solo los números pares
+lista = list([1,2,3,4,5,6,7,8,9,10])
+def Pares():
+    for i in lista:
+        if i%2==0:
+            print(i)
+
+Pares()'''
+
+
+
+'''Desarrolla un programa que solicite al usuario ingresar una cadena 
+de texto y luego imprima la misma cadena pero con todas las vocales en mayúscula.
+cadena = str(input("Ingresa Una Cadena: "))
+
+print(cadena.upper())'''
+
+
+
+'''Crea una clase llamada Libro con los atributos titulo, titulo y paginas. 
+Implementa métodos get_titulo, get_autor y get_paginas para obtener la 
+información actual del libro, y métodos set_titulo, set_autor y 
+set_paginas para actualizar estos valores.
+class Libro: # la clase
+    def __init__(self,titulo): # el contructor
+        self.titulo = titulo # los atrubutos
+        
+
+    def getAutor(self):
+        return self.titulo
+    
+    def set_autor(self,Title):
+        self.titulo = Title
+
+
+mostrar = Libro("La Odisea")
+
+print(mostrar.getAutor())
+
+mostrar.set_autor("La Iliada")
+print(mostrar.getAutor())'''
+
