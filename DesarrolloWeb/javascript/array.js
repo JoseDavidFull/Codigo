@@ -274,3 +274,25 @@ console.log(nums);
 
 cadenas.reverse()
 console.log(cadenas);*/
+
+
+
+
+/*Escribe un programa que solicite al usuario ingresar 5 
+números enteros, los almacene en un array y luego calcule 
+la suma de todos los elementos. Imprime el resultado.
+
+var num1 = prompt("Ingresa 1er Num")
+var num2 = prompt("Ingresa 2do Num")
+var num3 = prompt("Ingresa 3er Num")
+var num4 = prompt("Ingresa 4to Num")
+var num5 = prompt("Ingresa 5to Num")
+
+var array = [parseInt(num1), parseInt(num2), parseInt(num3), parseInt(num4), parseInt(num5)]
+var suma = 0 
+for(var i = 0; i<array.length;i++){
+    suma += array[i];
+}
+document.write(suma);*/
+
+

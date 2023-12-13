@@ -1,0 +1,65 @@
+Funciones y Cláusulas SQL utilizadas:
+Funciones de Selección y Proyección:
+SELECT: Se utiliza para seleccionar columnas de una tabla o el resultado de una expresión.
+
+FROM: Especifica la tabla desde la cual se están seleccionando los datos.
+
+LIMIT: Limita la cantidad de filas devueltas en el resultado de la consulta.
+
+ORDER BY: Ordena los resultados según una o más columnas.
+
+Funciones de Filtro:
+WHERE: Filtra las filas que cumplen con una condición específica.
+
+AND, OR: Operadores lógicos utilizados en las condiciones WHERE.
+
+LIKE: Se utiliza para buscar un patrón en una columna utilizando caracteres comodín.
+
+IN: Especifica múltiples valores en una condición de filtro.
+
+NOT: Se utiliza para negar una condición.
+
+BETWEEN: Filtra resultados dentro de un rango específico.
+
+Funciones de Agrupación y Agregación:
+GROUP BY: Agrupa filas basadas en los valores de una o más columnas.
+
+HAVING: Filtra los resultados de las funciones de agregación utilizadas con GROUP BY.
+
+COUNT: Cuenta el número de filas o valores distintos.
+
+SUM: Suma los valores de una columna.
+
+AVG: Calcula el promedio de los valores en una columna.
+
+MIN, MAX: Devuelven el valor mínimo o máximo en una columna.
+
+Funciones de Fechas:
+YEAR, MONTH: Extraen el año y el mes de una fecha, respectivamente.
+Funciones de Unión:
+INNER JOIN: Combina filas de dos o más tablas basadas en una condición.
+
+LEFT JOIN, RIGHT JOIN: Devuelven todas las filas de la tabla izquierda (derecha) y las filas coincidentes de la tabla derecha (izquierda).
+
+CROSS JOIN: Devuelve el producto cartesiano de las filas de las dos tablas.
+
+Otras Funciones y Cláusulas:
+UPDATE: Modifica los datos existentes en una tabla.
+
+SET: Asigna valores a las columnas en una cláusula UPDATE.
+
+IF: Se utiliza en expresiones condicionales.
+
+REPLACE: Reemplaza una subcadena en una cadena por otra subcadena.
+
+CONCAT, CONCAT_WS: Concatena cadenas de texto.
+
+COUNT(DISTINCT): Cuenta los valores distintos en una columna.
+
+LEFT, RIGHT: Extraen caracteres desde el lado izquierdo o derecho de una cadena.
+
+SUM, AVG con Subconsultas: Se utilizan para realizar agregaciones basadas en subconsultas.
+
+
+
+/*Mas Los que se...g*/
