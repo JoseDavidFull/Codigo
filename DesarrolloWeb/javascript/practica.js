@@ -1838,7 +1838,7 @@ console.log(ascendente);*/
 
 
 /*Clase Coche: Diseña una clase Coche con atributos como marca, 
-modelo y año. Agrega métodos para encender, apagar y acelerar el coche.*/
+modelo y año. Agrega métodos para encender, apagar y acelerar el coche.
 
 class Coche {//clase
     constructor(marca, modelo, año){//constructor
@@ -1852,4 +1852,43 @@ class Coche {//clase
 }
 
 const Ver = new Coche("Zuzuki","Hf",1990)//objeto
-console.log(Ver.Informacion());
+console.log(Ver.Informacion());*/
+
+
+/*Escribe una función que tome un array de números como 
+parámetro y devuelva la suma de todos los elementos.
+
+
+
+function suma(array = [1,2,3,4,5,6,7,8,9,10],suma=0){
+    for(var i in array){
+        suma+=array[i]
+    }console.log(suma);
+}
+
+suma();*/
+
+/*Escribe una función que tome un array de números como
+ parámetro y utilice la función sort para ordenar los 
+ números de forma ascendente. Devuelve el array ordenado. 
+
+function ordenar (array=[5,4,3,2,1,5,6,7,8,9,10]){
+    var ordenado = array.sort((a,b) =>{
+        return a-b
+    })
+    console.log(ordenado);
+}
+
+ordenar();*/
+
+/*Duplicar Números:
+Escribe una función que tome un array de números como parámetro
+ y utilice map para devolver un nuevo array donde cada número 
+ sea duplicado. */
+
+ function Duplicar(array=[1,2,3,4,5,6,7,8,9,10]) {
+    var duplicando = array.map((x) => x*2)
+    console.log(duplicando);
+ }
+
+ Duplicar();

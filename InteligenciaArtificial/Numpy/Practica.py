@@ -485,3 +485,11 @@ concatenar = np.vstack((matriz1, matriz2))
 print(concatenar)'''
 
 
+
+
+'''Crea un array unidimensional con números enteros aleatorios.'''
+
+import numpy as np
+
+aleatorios = np.random.randint(10)
+print(aleatorios)
