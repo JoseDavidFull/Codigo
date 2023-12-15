@@ -487,9 +487,58 @@ print(concatenar)'''
 
 
 
-'''Crea un array unidimensional con números enteros aleatorios.'''
+'''Crea un array unidimensional con números enteros aleatorios.
 
 import numpy as np
 
 aleatorios = np.random.randint(10)
-print(aleatorios)
+print(aleatorios)'''
+
+
+'''Genera un array NumPy con 15 elementos enteros aleatorios entre 5 y 50.
+Calcula y muestra el rango de valores en el array utilizando la función ptp.
+import numpy as np
+aleatorios = np.random.randint(5,50,15)
+rango = np.ptp(aleatorios)
+print(rango)
+'''
+'''Crea un array NumPy con 11 elementos, todos números enteros.
+Calcula e imprime la mediana del array utilizando la función median.
+
+import numpy as np
+array = np.array([1,2,3,4,5,6,7,8,9,10,11])
+Mediana = np.mean(array)
+print(Mediana)
+'''
+
+
+'''Crea dos arrays NumPy de una dimensión con al menos 5 elementos cada uno.
+Utiliza la función concatenate o vstack para concatenar los dos arrays y muestra el resultado
+import numpy as np
+array1 = np.array([1,2,3,4,5])
+array2 = np.array([1,2,3,4,5])
+
+Concatenar = np.concatenate([array1, array2])
+print(Concatenar)'''
+
+
+
+'''Crea una matriz bidimensional (por ejemplo, 4x5) con números aleatorios enteros.
+Calcula e imprime el rango de valores para cada columna utilizando ptp con axis.
+Calcula e imprime la mediana para cada fila utilizando median con axis.'''
+
+import numpy as np
+
+bidimensional = np.random.randint(1,20,20).reshape(4,5)
+rango = np.ptp(bidimensional,axis=1)
+mediana = np.median(rango)
+
+print("Bidimencional")
+print("\n")
+print(bidimensional)
+print("Rango")
+print("\n")
+print(rango)
+print("\n")
+print("Mediana")
+print(mediana)
