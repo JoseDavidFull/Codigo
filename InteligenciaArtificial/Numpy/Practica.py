@@ -525,7 +525,7 @@ print(Concatenar)'''
 
 '''Crea una matriz bidimensional (por ejemplo, 4x5) con números aleatorios enteros.
 Calcula e imprime el rango de valores para cada columna utilizando ptp con axis.
-Calcula e imprime la mediana para cada fila utilizando median con axis.'''
+Calcula e imprime la mediana para cada fila utilizando median con axis.
 
 import numpy as np
 
@@ -541,4 +541,14 @@ print("\n")
 print(rango)
 print("\n")
 print("Mediana")
-print(mediana)
+print(mediana)'''
+
+'''Crea un array de números enteros o decimales.
+Utiliza la función correspondiente para encontrar el promedio.'''
+import numpy as np
+
+array = np.array([1,2,3,4,5,6,7,8,9,10])
+Promide = np.mean(array)
+print(Promide)
+
+
