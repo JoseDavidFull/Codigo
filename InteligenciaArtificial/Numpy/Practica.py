@@ -544,11 +544,41 @@ print("Mediana")
 print(mediana)'''
 
 '''Crea un array de números enteros o decimales.
-Utiliza la función correspondiente para encontrar el promedio.'''
+Utiliza la función correspondiente para encontrar el promedio.
 import numpy as np
 
 array = np.array([1,2,3,4,5,6,7,8,9,10])
 Promide = np.mean(array)
-print(Promide)
+print(Promide)'''
 
 
+'''
+Crea un arreglo NumPy de tamaño 5x5 lleno de ceros.
+
+import numpy as np
+
+arreglo = np.zeros(25).reshape(5,5)
+print(arreglo)'''
+
+
+'''Crea dos arreglos NumPy de tamaño 3x3 con valores
+
+ aleatorios y realiza la suma de ambos.
+
+import numpy as np
+
+arreglo1 = np.random.rand(9).reshape(3,3)
+arreglo2 = np.random.rand(9).reshape(3,3)
+
+
+print(sum(arreglo1, arreglo2))'''
+
+'''Dado un arreglo NumPy unidimensional, selecciona solo los elementos pares.
+import numpy as np
+
+array = np.arange(1,11)
+for n in array:
+    if n%2==0:
+        print(n)
+        
+'''

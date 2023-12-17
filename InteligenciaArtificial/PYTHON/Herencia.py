@@ -37,7 +37,7 @@ Animales: Define una clase base Animal
 con atributos como nombre y edad, y 
 subclases como Perro, Gato y Pajaro 
 que hereden de ella y tengan atributos 
-adicionales.
+adicionales.'''
 
 class Animal:
     def __init__(self,nombre,edad):
@@ -55,4 +55,4 @@ class Perro(Animal):
     
 
 MostrarPerro  = Perro("rambo",5,"Dover")
-print(MostrarPerro.Mostrar())'''
+print(MostrarPerro.Mostrar())
