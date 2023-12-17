@@ -251,3 +251,37 @@ for i in numeros:
     if i%2==1:
         print(i)'''
 
+
+'''
+Operaciones Básicas:
+Crea una lista con nombres de ciudades. Realiza las siguientes operaciones:
+
+Imprime la lista.
+Añade una nueva ciudad al final de la lista.
+Inserta otra ciudad en la segunda posición.
+Elimina una ciudad de tu elección.
+Imprime la lista resultante.
+
+lista = list(["LaPaz","Oruro","Potosi","Beni","Pando","Tarija","SantaCruz","Trinidad"])
+print(lista)
+lista.append("laciudadmexico")
+print(lista)
+
+lista.insert(1,"Posicion2")
+print(lista)
+
+lista.pop(1)
+print(lista)
+'''
+
+
+
+
+'''Define una lista de números enteros. Calcula la suma de todos los elementos de la lista e imprime el resultado.'''
+
+nums = list([1,2,3,4,5,6,7,8,9,10])
+suma = 0
+for n in nums:
+    suma+=n
+
+print(suma)

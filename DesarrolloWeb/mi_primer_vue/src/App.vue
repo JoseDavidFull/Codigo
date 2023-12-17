@@ -1,37 +1,28 @@
-<script setup lang="js" >
-/*Iteración con v-for:
-
-Crea un array de nombres en tu componente de Vue.
-Utiliza v-for para mostrar cada nombre en una lista.
-
-Expande el ejercicio anterior añadiendo un filtro para 
-mostrar solo los nombres que contienen la letra 'a'.
-*/
-
-const Nombres = [
-    {
-        name : "David",
-        edad : 52
-    },
-    {
-        name : "Jose",
-        edad : 36
-    },
-    {
-        name : "Jose",
-        edad : 15
+<script>
+export default {
+  data() {
+    return {
+      array: ["Jose", "David", "Quispe", "Sucullani"]
+    };
+  },
+  methods: {
+    eliminar(index) {
+      this.array.splice(index, 1);
     }
-]
-
-
-
+  }
+};
+    
 </script>
 
 <template>
-    <ul v-for="index in Nombres" :key="index.name">
-        <li v-if="index">{{ index.name.includes("a")}}</li>
-    </ul>
+  <ul>
+    <li v-for="(item, index) in array" :key="index">
+      {{ item }}
+      <button @click="eliminar(index)">Eliminar</button>
+    </li>
+  </ul>
+</template>
 
-</template> 
-
-<style scoped></style>
+<style scoped>
+  /* Tu estilo si es necesario */
+</style>

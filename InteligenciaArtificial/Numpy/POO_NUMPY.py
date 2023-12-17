@@ -48,15 +48,33 @@ class OperacionesBasicas:
     
     def producto(self,producto=1):
         for i in self.array:
-            producto-=i
+            producto*=i
         return producto
 
 
 
 
 
-Mostrar = OperacionesBasicas((3,3))
+Mostrar = OperacionesBasicas((5,5))
 print(Mostrar.suma())
-print(Mostrar.producto())'''
+print(Mostrar.producto())
+'''
+
+'''
+Crea una clase llamada Estadisticas que tenga métodos para calcular la media,
+ la mediana y la desviación estándar de un conjunto de datos utilizando NumPy. 
+ La clase debe recibir el conjunto de datos en su constructor.
+
+import numpy as np
+
+class Estadisticas:
+    def __init__(self,nums):
+        self.array =  np.arange(nums)
+    
+    def Desviacion(self):
+        return np.std(self.array)
+    
 
 
+Mostrar = Estadisticas((1,9))
+print(Mostrar.Desviacion())'''
