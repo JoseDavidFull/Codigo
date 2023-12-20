@@ -1,23 +1,33 @@
-<script>
+<script setup>
+import { ref } from 'vue';
 
-const frutas = [
-    { id: 1, nombre: 'Manzana', valor: 2.5 },
-    { id: 2, nombre: 'Plátano', valor: 1.8 },
-    { id: 3, nombre: 'Fresa', valor: 4.0 },
-    { id: 4, nombre: 'Naranja', valor: 2.3 }
-];
+const frutas = ref([
+  { fruta: "manzana" },
+  { fruta: "pera" },
+  { fruta: "durazno" },
+  { fruta: "mango" },
+  { fruta: "uva" }
+]);
+
+const verfrutas = ref(false);
+
+const visibilidad = () => {
+  verfrutas.value = !verfrutas.value;
+}
+
 
 
 </script>
 
+
+
 <template>
   <div>
-    <ul>
-      <li v-for="ver in frutas">{{ ver }}</li>
+    <button @mouseout="visibilidad" >{{ frutas? '🙉' : '🙈' }}</button>
+    <ul v-if="verfrutas ">
+      <li v-for="ver in frutas" :key="ver.fruta">
+        {{ ver.fruta }}
+      </li>
     </ul>
   </div>
 </template>
-
-<style scoped>
-
-</style>
