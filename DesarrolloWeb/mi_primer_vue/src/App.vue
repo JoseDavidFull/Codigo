@@ -1,28 +1,23 @@
 <script>
-export default {
-  data() {
-    return {
-      array: ["Jose", "David", "Quispe", "Sucullani"]
-    };
-  },
-  methods: {
-    eliminar(index) {
-      this.array.splice(index, 1);
-    }
-  }
-};
-    
+
+const frutas = [
+    { id: 1, nombre: 'Manzana', valor: 2.5 },
+    { id: 2, nombre: 'Plátano', valor: 1.8 },
+    { id: 3, nombre: 'Fresa', valor: 4.0 },
+    { id: 4, nombre: 'Naranja', valor: 2.3 }
+];
+
+
 </script>
 
 <template>
-  <ul>
-    <li v-for="(item, index) in array" :key="index">
-      {{ item }}
-      <button @click="eliminar(index)">Eliminar</button>
-    </li>
-  </ul>
+  <div>
+    <ul>
+      <li v-for="ver in frutas">{{ ver }}</li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
-  /* Tu estilo si es necesario */
+
 </style>
