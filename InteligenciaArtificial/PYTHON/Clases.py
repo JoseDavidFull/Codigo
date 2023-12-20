@@ -200,3 +200,27 @@ producto = str(input("Ingresa Producto: \n"))
 
 dato = Tienda(name,producto)
 print(dato.Mostrar())'''
+
+
+
+
+'''
+Define una clase llamada Persona con atributos como nombre, edad y género. Incluye 
+métodos para imprimir la información de la persona y para actualizar la edad.
+
+class Persona:
+    def __init__ (self, nombre,edad, genero):
+        self.nombre = nombre
+        self.edad = edad
+        self.genero = genero
+
+    def Informacion(self):
+        return f"Nombre: {self.nombre} Edad: {self.edad} Genero: {self.genero}"
+
+
+Mostrar = Persona("David",25,"Masculino")
+print(Mostrar.Informacion())'''
+
+
+'''
+'''

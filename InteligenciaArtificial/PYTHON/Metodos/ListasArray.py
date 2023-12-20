@@ -277,11 +277,12 @@ print(lista)
 
 
 
-'''Define una lista de números enteros. Calcula la suma de todos los elementos de la lista e imprime el resultado.'''
-
+'''Define una lista de números enteros. Calcula la suma de todos los elementos de la lista e imprime el resultado.
 nums = list([1,2,3,4,5,6,7,8,9,10])
 suma = 0
 for n in nums:
     suma+=n
 
-print(suma)
+print(suma)'''
+
+

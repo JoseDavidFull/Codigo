@@ -1667,7 +1667,7 @@ function Suma() {
     var suma = 0;
     for(var i=1;i<=array.length;i++){
         suma+=i
-    }
+        }
     return suma
 }
 
@@ -1884,7 +1884,7 @@ ordenar();*/
 /*Duplicar Números:
 Escribe una función que tome un array de números como parámetro
  y utilice map para devolver un nuevo array donde cada número 
- sea duplicado. */
+ sea duplicado. 
 
  function Duplicar(array=[1,2,3,4,5,6,7,8,9,10]) {
     var duplicando = array.map((x) => x*2)
@@ -1892,3 +1892,45 @@ Escribe una función que tome un array de números como parámetro
  }
 
  Duplicar();
+
+
+
+ */
+
+
+/*Crea una función que tome un array y un elemento como parámetros y devuelva true si el 
+elemento está presente en el array, y false en caso contrario. 
+
+const array = [1,2,3,4,5,6,7,8,9,10]
+
+function Encontrar(encontrar){
+    encontrar = array.includes(11)
+    if(encontrar){
+        return true
+    }
+    else{
+        return false
+    }
+}
+
+console.log(Encontrar());
+
+*/
+
+
+
+/*Eliminar Elemento Específico:
+Crea una función que elimine todas las ocurrencias de un elemento específico en un array.
+
+const array = [1,2,3,4,5,6,7,8,9,10]
+
+function Eliminar(busqueda){
+    busqueda = array.pop(0)
+    return busqueda
+}
+
+console.log(Eliminar());
+console.log(array);*/
+
+
+
