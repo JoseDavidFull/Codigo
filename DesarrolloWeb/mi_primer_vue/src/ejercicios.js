@@ -84,4 +84,95 @@ const ver = true // cambia, si es true se ve el mensaje y si es false no se ve
 </template> */
 
 
+/*<script setup>
+Crea un array de objetos, donde cada objeto represente un estudiante con propiedades como nombre, edad y nota.
+Utiliza v-for para mostrar la información de cada estudiante en una lista.
+Implementa un botón que, al hacer clic.
 
+import { ref } from 'vue';
+
+
+const estudiantes = ref([
+  { nombre: "Ana", edad: 18, nota: 8 },
+  { nombre: "Carlos", edad: 20, nota: 7 },
+  { nombre: "Elena", edad: 19, nota: 9 },
+  { nombre: "Francisco", edad: 22, nota: 6 },
+  { nombre: "Gabriela", edad: 21, nota: 8 },
+  { nombre: "Hector", edad: 19, nota: 7 }
+]);
+
+const ver = ref(false)
+
+const MostrarInformacion = () => {
+  ver.value = !ver.value;
+}
+
+</script>
+
+
+<template>
+  <div>
+    <button @click="MostrarInformacion">{{ ver ? "Ocultar" : "Mostrar" }}</button>
+    <ul v-if="ver">
+      <li v-for="estudiante in estudiantes" :key="estudiante.nombre">
+        {{ estudiante.nombre }} - Edad: {{ estudiante.edad }} - Nota: {{ estudiante.nota }}
+      </li>
+    </ul>
+  </div>
+  <br>
+</template>
+ */
+
+
+
+
+
+
+/*<script setup>
+Mouseover y Mouseout:
+
+Crea un elemento (puede ser un cuadro div) que cambie de color
+ cuando el mouse entra (mouseover) y vuelva a su color 
+ original cuando el mouse sale (mouseout).
+Utiliza @mouseover y @mouseout para manejar estos eventos. 
+import {ref} from "vue";
+
+const ver = ref(false)
+
+const IntercambioColor = () =>{
+  ver.value = !ver.value
+}
+
+const verde = { 'background-color': 'green' }
+</script>
+
+
+<template>
+  <div class="cuadrado" >
+    <h1 @mouseover="IntercambioColor" @mouseout="IntercambioColor" v-bind:style="ver ? verde : {}">
+      {{ ver ? "Verde ": "Normal" }}
+    </h1>
+    
+  </div>
+</template>
+*/
+
+
+
+
+/*<script setup>
+@click: Cambio de Imagen
+
+Tienes dos imágenes. Al hacer clic en una, debería aparecer la otra. 
+Implementa este cambio de imagen usando @click.
+import { ref } from 'vue';
+const visibilisar = ref(false)
+const CambiarImage = () =>{
+  visibilisar.value = !visibilisar.value
+}
+</script>
+<template>
+  <img v-if="visibilisar" src="./assets/imagen/PoleraArg.png" alt="Blanco" style="width: 350px; height: 500px;" @click="CambiarImage">
+  <img v-else src="./assets/imagen/PoleraArg1.png" alt="Azul" @click="CambiarImage">
+</template>
+*/
