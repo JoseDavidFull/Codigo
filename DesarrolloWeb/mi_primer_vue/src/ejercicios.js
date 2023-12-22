@@ -176,3 +176,83 @@ const CambiarImage = () =>{
   <img v-else src="./assets/imagen/PoleraArg1.png" alt="Azul" @click="CambiarImage">
 </template>
 */
+
+
+
+/*
+<script setup>
+Tienes dos imágenes. Cuando el mouse entra en una imagen, 
+debería cambiar a la otra. Al salir, debería volver a la imagen original. 
+import { ref } from 'vue';
+const verificar = ref(false)
+const CambioImagen = () =>{
+  verificar.value = !verificar.value
+}
+</script>
+<template>
+  <img v-if="verificar" @mouseover="CambioImagen"  src="./assets/imagen/PoleraArg.png" alt="Oficial" style="width: 350px; height: 500px;">
+  <img v-else @mouseout="CambioImagen"  src="./assets/imagen/PoleraArg1.png" alt="Visitante" >
+</template>
+<style scoped>
+
+</style>
+*/
+
+
+
+
+/*<script setup>
+import { ref } from 'vue';
+
+const Days = ref([
+  { day: 'Lunes', price: 10.99 },
+  { day: 'Martes', price: 12.99 },
+  { day: 'Miercoles', price: 11.49 },
+  { day: 'Jueves', price: 9.99 },
+  { day: 'Viernes', price: 14.99 },
+  { day: 'Sabado', price: 16.99 },
+  { day: 'Domingo', price: 13.99 },
+]);
+
+const priceMoney = 11.49
+
+const ver = ref(false)
+
+const verificar = () => {
+  ver.value = !ver.value
+}
+
+</script>
+
+
+<template>
+  <div>
+    <button @click="verificar">
+      <h1 >
+      {{ ver ? "🙈" : "🙉" }}
+    </h1>
+    </button>
+    <br>
+    <ul v-if="ver" v-show="verificar" >
+      <li v-for="index in Days" :key="index.day" v-bind:class="{Rojo: index.price === priceMoney, Amarillo : index.price < priceMoney, Verde : index.price > priceMoney}">
+        {{ index.day }} - {{ index.price }}
+      </li>
+    </ul>
+  </div>
+</template>
+
+
+
+<style>
+.Rojo {
+  color: red;
+}
+
+.Amarillo {
+  color: yellow;
+}
+
+.Verde {
+  color: green;
+}
+</style>*/
