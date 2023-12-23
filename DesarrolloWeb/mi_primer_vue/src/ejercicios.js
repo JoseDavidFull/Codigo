@@ -256,3 +256,68 @@ const verificar = () => {
   color: green;
 }
 </style>*/
+
+
+
+
+
+/* 
+<script setup>
+v-bind:class:
+Crea un componente de tarjeta de usuario que tenga propiedades 
+como nombre, edad y estado (activo o inactivo).
+Utiliza v-bind:class para aplicar un estilo diferente a la tarjeta 
+dependiendo del estado (por ejemplo, un fondo verde para activo y rojo para inactivo).
+
+const Usuario = [
+    {Nombre: "David", Edad : 10, Estado : 1},
+    {Nombre: "Jose", Edad : 15, Estado : 0},
+    {Nombre: "Elisa", Edad : 20, Estado : 1},
+    {Nombre: "Juan", Edad : 25, Estado : 1},
+    {Nombre: "Carolo", Edad : 30, Estado : 0},
+    {Nombre: "Jhon", Edad : 35, Estado : 0}
+]
+</script>
+
+<template>
+    <h1  v-for="index in Usuario" :key="index.Estado" v-bind:class="{Verde : index.Estado == 1, Rojo : index.Estado == 0}">
+        {{ index.Nombre }} - {{ index.Edad }} - {{ index.Estado }}
+    </h1>
+  
+</template>
+
+
+<style>
+.Verde{
+    color: green;
+}
+
+.Rojo{
+    color : red;
+}
+</style>
+*/
+
+/*
+<script setup>
+v-show:
+Crea un botón que al hacer clic alternará la visibilidad de un elemento en 
+la interfaz utilizando v-show. Por ejemplo, un mensaje oculto que se muestra 
+al hacer clic y se oculta al hacer clic nuevamente. 
+import { ref } from 'vue';
+const mensaje = "Hola Como Estas"
+const  verificar = ref(true)
+const Mensaje = () =>{
+    verificar.value = !verificar.value
+}
+</script>
+<template>
+    <button @click="Mensaje">{{ verificar ? "Ocultar" : "Mostrar" }}</button>
+    <br>
+    <h1  v-show="verificar">
+        {{ mensaje }}
+    </h1>
+
+</template>
+
+ */
