@@ -321,3 +321,27 @@ const Mensaje = () =>{
 </template>
 
  */
+
+
+/*<script setup>
+Estilo Diferente para Números Pares e Impares:
+Genera una lista de números del 1 al 10.
+Utiliza v-bind:class para aplicar la clase "par" a los números pares y la clase "impar" 
+a los números impares. Define estilos diferentes para las clases "par" e "impar".
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+</script>
+<template>
+    <h1 v-for="index in numeros" v-bind:class="{Par: index %2==0, Impar : index %2==1}">
+        {{ index }}
+    </h1>
+</template>
+<style>
+
+.Par{
+    color: green ;
+}
+
+.Impar{
+    color : red;
+}
+</style> */
