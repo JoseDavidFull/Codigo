@@ -1,32 +1,32 @@
 <script setup>
-/*Estilos Condicionalmente Basados en el Contenido:
-Crea una lista de elementos que contengan texto.
-Utiliza v-bind:class para aplicar una clase "largo" a los elementos cuyo texto tenga más de 
-10 caracteres y una clase "corto" a los que tengan 10 o menos caracteres. */
+import { ref } from 'vue';
+
+/*Crea un componente con un botón.
+Al hacer clic en el botón, cambia el color de fondo del componente dinámicamente. */
 
 
-const texto = ["Hola Como estas Elisabeth","Sere El mejor","Conseguir trabajo antes de salir profesional","ser senior","Hacer la  libreria"]
+const ver = ref(false)
 
-
-
+const cambiar = () =>{
+    ver.value = !ver.value;
+}
+const Blue = { 'background-color': 'blue'}
+const Red = {'background-color': 'red'}
 </script>
 
 <template>
-    <li v-for="text in texto" v-bind:class="{Largo : text.length > 10, Corto : text.length <= 10}">
-        {{ text }}
-    </li>
-
+    <button @click="cambiar" v-bind:style="ver ? Blue : Red">
+        <h1>
+            {{ ver ? "Cambia a Rojo" : "Cambia a Azul"}}    
+        </h1>
+    </button>
+    
 </template>
 
 
 <style scoped>
-
-.Largo{
-    color: red;
-}
-
-.Corto{
-    color: blue;
+h1{
+    border-radius: 50px;
 }
 
 </style>
