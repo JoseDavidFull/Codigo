@@ -345,3 +345,24 @@ const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     color : red;
 }
 </style> */
+
+
+
+
+/*<script setup>
+import { computed, ref } from 'vue';
+Calculadora de Edad:
+Crea un componente con un campo de entrada para el año de nacimiento.
+Utiliza una propiedad computada para calcular la edad actual y 
+muéstrala en la interfaz. 
+const anio = ref(0)
+const calcularEdad = computed(()=>{
+    const anioActual = 2023
+    return anioActual - anio.value
+})
+</script>
+<template>
+    <input type="number" v-model="anio" >
+    <p>{{ calcularEdad }}</p>
+</template>
+*/
