@@ -388,3 +388,68 @@ const valorDolar = computed(()=>{
 </template>
 <style scoped>
 </style>*/
+
+
+
+
+
+/*<script setup>
+import { ref, watch } from 'vue';
+Crea un componente Vue con una variable contador en el data.
+Utiliza un watcher para imprimir en la consola un mensaje indicando
+el nuevo valor cada vez que contador cambie. Incrementa el contador 
+al hacer clic en un botón. 
+const  contador = ref(0)
+const Incremento = () =>{ // funcion flecha
+    contador.value++
+}
+watch(contador,(newvalor, antiguovalor)=>{
+    console.log(newvalor,antiguovalor);
+})
+</script>
+<template>
+    <button @click="Incremento">Incremento</button>
+    <h1>{{ contador }}</h1>
+</template>*/
+
+
+/*<script setup>
+import { ref, watch } from 'vue';
+Validación de Formulario con Watch:
+Crea un formulario simple con campos como nombre, correo electrónico y edad.
+Utiliza un watcher para validar la edad. Si la edad es menor de 18 años,
+muestra un mensaje de advertencia en la consola.
+const edad = ref(0)
+watch(edad,(edad)=>{
+    if(edad <= 17){
+        console.log("Eres menor de edad");
+    }
+    else{
+        console.log("Eres mayor de edad");
+    }
+})
+</script>
+<template>
+    <div>
+        <h5>Nombre:</h5>
+        <input type="text" name="nombre" id="1" >
+        <br>
+        <br>
+        <h5>Email:</h5>
+        <input type="gmail">
+        <br>
+        <br>
+        <h5>Edad:</h5>
+        <input type="number" name="edad" id="3" v-model="edad">
+    </div>    
+</template>
+<style scoped>
+input{
+    border-radius: 20px;
+}
+
+h5{
+    font-size: 15px;
+    color: white;
+}
+</style>*/
