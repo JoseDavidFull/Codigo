@@ -366,3 +366,25 @@ const calcularEdad = computed(()=>{
     <p>{{ calcularEdad }}</p>
 </template>
 */
+
+
+
+
+/*<script setup>
+Conversion de boliviano a dolar
+import { computed, ref } from 'vue';
+const valor= ref(0)
+const dolar = 6.7
+const valorDolar = computed(()=>{
+    if(!valor){
+        return 0
+    }
+    return valor.value * dolar
+})
+</script>
+<template>
+    <input type="number" v-model="valor">
+    <span>{{ valorDolar }}</span>
+</template>
+<style scoped>
+</style>*/
