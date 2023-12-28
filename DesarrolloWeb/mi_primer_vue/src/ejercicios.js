@@ -453,3 +453,61 @@ h5{
     color: white;
 }
 </style>*/
+
+
+
+
+
+/*<script setup>
+import { ref } from 'vue';
+Cambio de Color Dinámico:
+Crea un componente que tenga un botón.Utiliza v - bind: class para cambiar dinámicamente el 
+color del botón cada vez que se hace clic en él.
+const Cambio = ref(false)
+const Component = () => {
+    return Cambio.value = !Cambio.value
+}
+</script>
+<template>
+    <button @click="Component" v-bind:class="{ Green: !Cambio, Orange: Cambio }">
+        <h1>{{ Cambio }}</h1>
+    </button>
+</template>
+<style scoped>
+.Green {
+    color: green;
+}
+
+.Orange {
+    color: orange;
+}
+</style>*/
+
+
+
+
+/*<script setup>
+import { ref } from 'vue';
+Estilo de Fondo con Gradiente Dinámico:
+Utiliza v-bind:style para cambiar el fondo de un componente con un gradiente de 
+color que varíe según una propiedad de datos. 
+const cambio = ref(false)
+
+const CambioFondo = () => {
+    cambio.value = !cambio.value
+}
+</script>
+<template>
+    <button @click="CambioFondo" v-bind:style="{ backgroundColor: cambio ? 'yellow' : 'red' }">
+        {{ cambio }}
+    </button>
+</template>
+<style scoped>
+.Red {
+    background-color: red;
+}
+
+.Yellow {
+    background-color: yellow;
+}
+</style>*/
