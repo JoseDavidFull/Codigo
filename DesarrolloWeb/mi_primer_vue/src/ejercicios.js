@@ -14,7 +14,6 @@ const incremento = () => {
 </template>
 */
 
-
 /*<script setup>
 Iteración con v-for: Crea una lista de objetos 
 (por ejemplo, una lista de usuarios) y utiliza v-for 
@@ -36,7 +35,6 @@ const usuarios = [
   </div>
 </template>*/
 
-
 /*<script setup>
 Manejo de clics con @click: Crea un botón que, al ser clicado, imprima un mensaje en la consola. 
 const mensaje = "Hola Como Estas"
@@ -47,9 +45,6 @@ const MostrarMensaje = () =>{
 <template>
   <button @click="MostrarMensaje">Mensaje</button>
 </template>*/
-
-
-
 
 /*<script setup>
 Cambios de estilo con @mouseover y @mouseout: Crea un elemento 
@@ -69,8 +64,6 @@ const metodo = () => {
   </span>
 </template>*/
 
-
-
 /*<script setup>
 Visibilidad con v-show: Implementa un botón que alterne la visibilidad 
 de un elemento en la interfaz utilizando v-show. 
@@ -82,7 +75,6 @@ const ver = true // cambia, si es true se ve el mensaje y si es false no se ve
     {{ mensaje }}
   </h1>
 </template> */
-
 
 /*<script setup>
 Crea un array de objetos, donde cada objeto represente un estudiante con propiedades como nombre, edad y nota.
@@ -123,11 +115,6 @@ const MostrarInformacion = () => {
 </template>
  */
 
-
-
-
-
-
 /*<script setup>
 Mouseover y Mouseout:
 
@@ -157,9 +144,6 @@ const verde = { 'background-color': 'green' }
 </template>
 */
 
-
-
-
 /*<script setup>
 @click: Cambio de Imagen
 
@@ -176,8 +160,6 @@ const CambiarImage = () =>{
   <img v-else src="./assets/imagen/PoleraArg1.png" alt="Azul" @click="CambiarImage">
 </template>
 */
-
-
 
 /*
 <script setup>
@@ -197,9 +179,6 @@ const CambioImagen = () =>{
 
 </style>
 */
-
-
-
 
 /*<script setup>
 import { ref } from 'vue';
@@ -256,10 +235,6 @@ const verificar = () => {
   color: green;
 }
 </style>*/
-
-
-
-
 
 /* 
 <script setup>
@@ -322,7 +297,6 @@ const Mensaje = () =>{
 
  */
 
-
 /*<script setup>
 Estilo Diferente para Números Pares e Impares:
 Genera una lista de números del 1 al 10.
@@ -346,9 +320,6 @@ const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 }
 </style> */
 
-
-
-
 /*<script setup>
 import { computed, ref } from 'vue';
 Calculadora de Edad:
@@ -366,9 +337,6 @@ const calcularEdad = computed(()=>{
     <p>{{ calcularEdad }}</p>
 </template>
 */
-
-
-
 
 /*<script setup>
 Conversion de boliviano a dolar
@@ -389,10 +357,6 @@ const valorDolar = computed(()=>{
 <style scoped>
 </style>*/
 
-
-
-
-
 /*<script setup>
 import { ref, watch } from 'vue';
 Crea un componente Vue con una variable contador en el data.
@@ -411,7 +375,6 @@ watch(contador,(newvalor, antiguovalor)=>{
     <button @click="Incremento">Incremento</button>
     <h1>{{ contador }}</h1>
 </template>*/
-
 
 /*<script setup>
 import { ref, watch } from 'vue';
@@ -454,10 +417,6 @@ h5{
 }
 </style>*/
 
-
-
-
-
 /*<script setup>
 import { ref } from 'vue';
 Cambio de Color Dinámico:
@@ -482,9 +441,6 @@ const Component = () => {
     color: orange;
 }
 </style>*/
-
-
-
 
 /*<script setup>
 import { ref } from 'vue';
@@ -512,9 +468,6 @@ const CambioFondo = () => {
 }
 </style>*/
 
-
-
-
 /*<script setup>
 import { ref } from 'vue';
 Cambio Dinámico de Tamaño de Texto:
@@ -535,9 +488,6 @@ const CambiarTexto = () => {
  }
 </style>
 */
-
-
-
 
 /*
 <script setup>
@@ -577,8 +527,6 @@ const props = defineProps({
 </template>
 */
 
-
-
 /*
 <script setup>
 Propiedades Padre-Hijo:
@@ -612,3 +560,69 @@ defineProps(["Productos"]);
 </template>
 <style scoped></style>
 */
+
+/*<script setup>
+import { ref } from 'vue';
+
+const contador = ref(0)
+const incremento = () =>{
+    contador.value++
+}
+
+const guardar = () =>{
+  seguimiento.value.push(contador.value)
+}
+
+const eliminar = () =>{
+  seguimiento.value.pop(contador.value)
+}
+
+const reiniciar = () =>{
+  seguimiento.value = contador.value = 0
+}
+
+const seguimiento = ref([])
+</script>
+<template>
+    <button @click="incremento"> incremento</button>
+    <h1>{{ contador }}</h1>
+    <button @click="guardar">Guardar</button>
+    <br>
+    <button @click="eliminar">Borrar</button>
+    <br>
+    <button @click="reiniciar">Reiniciar</button>
+    <br>
+    <ul >
+      <li v-for="valor in seguimiento" :key="valor">
+        {{ valor }}
+      </li>
+    </ul>
+</template>
+*/
+
+
+
+/*<script setup>
+lista de frutas y boton de añadir y añado aparece 
+import { ref } from "vue"
+const Frutas = [
+  { nombre: "Manzana", color: "Rojo", precio: 1.5 },
+  { nombre: "Banana", color: "Amarillo", precio: 0.8 },
+  { nombre: "Uva", color: "Morado", precio: 2.3 }
+];
+const seguimiento = ref([])
+const añadir = (fruta) => {
+  seguimiento.value.push(fruta)
+}
+</script>
+<template>
+  <ul v-for="fruta in Frutas">
+    <button @click="añadir(fruta)">Añadir</button>
+    <li>{{ fruta.nombre }} - {{ fruta.color }} - {{ fruta.precio }}</li>
+  </ul>
+  <ul>
+    <li v-for="fruta in seguimiento" :key="fruta.nombre">
+      {{ fruta.nombre }} - {{ fruta.color }} - {{ fruta.precio }}
+    </li>
+  </ul>
+</template>*/
