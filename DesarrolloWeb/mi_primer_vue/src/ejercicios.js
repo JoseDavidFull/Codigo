@@ -511,3 +511,104 @@ const CambioFondo = () => {
     background-color: yellow;
 }
 </style>*/
+
+
+
+
+/*<script setup>
+import { ref } from 'vue';
+Cambio Dinámico de Tamaño de Texto:
+Crea un componente con un botón. Utiliza v-bind:style para cambiar dinámicamente el 
+tamaño del texto cada vez que se hace clic en el botón.
+const Grande = ref(0)
+const CambiarTexto = () => {
+    Grande.value = !Grande.value
+}
+</script>
+<template>
+    <button @mouseover="CambiarTexto" @mouseout="CambiarTexto" v-bind:style="{ 'font-size': Grande ? '120px' : '40px' }">
+        Hola Elisabeth
+    </button>
+</template>
+<style scoped> .Grande {
+     font-size: 40px;
+ }
+</style>
+*/
+
+
+
+
+/*
+<script setup>
+import { ref } from 'vue';
+import Hijo from './components/Hijo.vue';
+Calculadora Simple:
+Implementa un componente de calculadora que acepte props para dos números 
+y un operador, realice la operación y muestre el resultado. 
+const num1 = ref(0)
+const num2 = ref(0)
+
+const Sumando = () => {
+    return num1.value + num2.value
+}
+
+</script>
+
+<template>
+    <div>
+        <input type="number" name="num1" v-model="num1" placeholder="Ingresa Primer Numero">
+        <br>
+        <input type="number" name="num2" v-model="num2" placeholder="Ingresa Segundo Numero">
+        <br>
+        <Hijo v-bind:suma="Sumando()"></Hijo>
+    </div>
+</template>
+
+<script setup>
+const props = defineProps({
+    suma : Object
+})
+</script>
+<template>
+    <h1>
+        {{ suma }}
+    </h1>
+</template>
+*/
+
+
+
+/*
+<script setup>
+Propiedades Padre-Hijo:
+Crea un componente padre que tenga una lista de productos y un componente hijo 
+que muestre detalles de un producto seleccionado en el padre. Actualiza los 
+detalles cuando se selecciona un nuevo producto. 
+import Hijo from "./components/Hijo.vue"
+const Productos = {
+    nombre1 : "apple",
+    nombre2 : "mango",
+    nombre3 : "banana",
+    nombre4 : "Pera"
+}
+</script>
+
+<template>
+    <Hijo v-bind:Productos="Productos"></Hijo>
+</template>
+
+
+<script setup>
+defineProps(["Productos"]);
+</script>
+<template>
+    <ul>
+        <li>{{ Productos.nombre1 }} -
+            {{ Productos.nombre2 }} -
+            {{ Productos.nombre3 }}
+        </li>
+    </ul>
+</template>
+<style scoped></style>
+*/

@@ -1,31 +1,35 @@
 <script setup>
 import { ref } from 'vue';
 
-/*Cambio Dinámico de Tamaño de Texto:
-Crea un componente con un botón. Utiliza v-bind:style para cambiar dinámicamente el 
-tamaño del texto cada vez que se hace clic en el botón./*/
 
-const Grande = ref(0)
+/*Crea un componente llamado BotonContador. */
 
-const CambiarTexto = ()=>{
-    Grande.value = !Grande.value
+const contador = ref(0)
+
+const incremento = () =>{
+    contador.value++
+    seguimiento.value.push(contador.value)
+    
 }
 
+const seguimiento = ref([])
 
 </script>
 
 
 <template>
-    <button @mouseover="CambiarTexto" @mouseout="CambiarTexto" v-bind:style="{'font-size': Grande ? '120px' : '40px'  }">
-        Hola Elisabeth
-    </button>
+    <button @click="incremento"> incremento</button>
+    <h1>{{ contador }}</h1>
 
+    <br>
+    <ul>
+      <li v-for="valor in seguimiento" :key="valor">
+        {{ valor }}
+      </li>
+    </ul>
 </template>
 
+<style>
 
-<style scoped> 
 
-.Grande{
-    font-size: 40px;
-}
 </style>
