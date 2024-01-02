@@ -626,3 +626,38 @@ const añadir = (fruta) => {
     </li>
   </ul>
 </template>*/
+
+
+
+
+/*<script setup lang="js">
+v-for con Lista de Objetos:
+Crea un componente que utilice la directiva v-for para iterar
+sobre una lista de objetos y mostrar su contenido. 
+import Hijo from './components/Hijo.vue';
+const Productos = [
+  { name: "Manzana", price: 5 },
+  { name: "Papaya", price: 2 },
+  { name: "Sandia", price: 9 }
+]
+</script>
+<template>
+  <div>
+    <Hijo>
+      <template v-slot:Products>
+        <ul>
+          <li v-for="index in Productos" :key="name">
+            {{ index.name }} : {{ index.price }}
+          </li>
+        </ul>
+      </template>
+    </Hijo>
+  </div>
+</template>
+
+<script setup lang="js">
+</script>
+<template>
+    <slot name="Products"></slot>
+</template>
+*/
