@@ -1,21 +1,44 @@
 <script setup>
-import Hijo from './components/Hijo.vue';
+/*una pagina que tenga productos name and price  and url and que tenga un boton 
+de añadir a carrito y añada a componente carrito */
 
-/*Card de Usuario:
-Crea un componente CardUsuario que acepte un objeto de usuario como prop
-y muestre información relevante sobre el usuario. */
-const Usuario = [
-  { name: "David", age: 25, ci: 8519137 },
-  { name: "Laura", age: 30, ci: 7632458 },
-  { name: "Carlos", age: 22, ci: 6548712 },
-  { name: "Ana", age: 28, ci: 9356241 },
-  { name: "Javier", age: 35, ci: 8123456 }
+const Productos = [
+  { 
+    name: "Lápiz", 
+    price: 5, 
+    url: "https://ejemplo.com/lapiz" 
+  },
+  { 
+    name: "Cuaderno", 
+    price: 10, 
+    url: "https://ejemplo.com/cuaderno" 
+  },
+  { 
+    name: "Borrador", 
+    price: 2, 
+    url: "" 
+  },
+  { 
+    name: "Regla", 
+    price: 3.5, 
+    url: "https://ejemplo.com/regla" 
+  },
+  { 
+    name: "Estuche", 
+    price: 8, 
+    url: "https://ejemplo.com/estuche" 
+  }
 ];
-
 
 </script>
 
 
 <template>
-  <Hijo v-bind:Usuario="Usuario"></Hijo>
+
 </template>
+
+
+
+<style scoped>
+
+</style>
