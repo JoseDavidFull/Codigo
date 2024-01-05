@@ -707,3 +707,20 @@ const Productos = [
 
 */
 
+/*<script setup>
+Propiedades Computadas (Computed Properties):
+Crea un componente con dos propiedades de datos, como 'numero1' y 'numero2'.
+Utiliza una propiedad computada para calcular la suma de 'numero1' 
+y 'numero2' y mostrar el resultado en el template.
+import {computed, ref} from "vue"
+const numero1 = ref(0)
+const numero2 = ref(0)
+const suma = computed(()=>{
+  return numero1.value + numero2.value
+})
+</script>
+<template>
+  <input v-model="numero1" type="number">
+  <input v-model="numero2" type="number">
+  <h1>{{ suma }}</h1>
+</template>*/
