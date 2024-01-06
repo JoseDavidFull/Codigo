@@ -723,4 +723,96 @@ const suma = computed(()=>{
   <input v-model="numero1" type="number">
   <input v-model="numero2" type="number">
   <h1>{{ suma }}</h1>
-</template>*/
+</template>*/ 
+
+
+
+
+/* 
+
+<template>
+    <div>
+      <h1>Productos</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Añadir al Carrito</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="producto in productos" :key="producto.name">
+            <td>{{ producto.name }}</td>
+            <td>{{ producto.price }} Bs</td>
+            <td>
+              <button @click="addToCart(producto)">Añadir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h1>Carrito</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="producto in carrito" :key="producto.name">
+            <td>{{ producto.name }}</td>
+            <td>{{ producto.price }} Bs</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h2>Total: {{ total }} Bs</h2>
+    </div>
+  </template>
+  
+  <script setup>
+  import { ref } from 'vue';
+  
+  const productos = [
+    { name: "Lápiz", price: 5 },
+    { name: "Borrador", price: 10 },
+    { name: "Tijera", price: 15 },
+    { name: "Bolígrafo", price: 20 },
+    { name: "Resaltador", price: 25 }
+  ];
+  
+  const carrito = ref([]);
+  const total = ref(0);
+  
+  const addToCart = (producto) => {
+    carrito.value.push(producto);
+    total.value += producto.price;
+  };
+  </script>
+  
+  <style scoped>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  </style>
+  
+
+*/
