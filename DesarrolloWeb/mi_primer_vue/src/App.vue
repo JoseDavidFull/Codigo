@@ -1,30 +1,20 @@
 <script setup>
-import { ref, reactive, watch } from 'vue'
-import gsap from 'gsap'
+/*Ajuste de Tamaño Dinámico:
+Crea un componente con un elemento de texto.
+Utiliza estilos en tiempo real para ajustar dinámicamente el tamaño de 
+fuente del texto en función de la longitud del contenido. */
 
-const number = ref(0)
-const tweened = reactive({
-  number: 0
-})
+const palabra = "HolaElisabeth"
 
-watch(
-  number,
-  (n) => {
-    gsap.to(tweened, { duration: 1, number: Number(n) || 0 })
-  }
-)
 </script>
 
 <template>
-  <div class="demo">
-    Type a number: <input v-model.number="number" />
-    <p class="big-number">{{ tweened.number.toFixed(0) }}</p>
-  </div>
+    <div>
+        <p v-bind:style="{'font-size' : '80px'}">{{ palabra }}</p>
+    </div>
 </template>
 
-<style>
-.big-number {
-  font-weight: bold;
-  font-size: 2em;
-}
+<style scoped>
+
+
 </style>
