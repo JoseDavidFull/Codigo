@@ -816,3 +816,80 @@ const suma = computed(()=>{
   
 
 */
+
+
+
+
+
+/*
+<script setup>
+hacer una pagina de productos e imagenes con name, price and url with añadir a carrito y añada
+componente hijo(props) el precio el total si se puede
+import { ref } from 'vue';
+import Hijo from './components/Hijo.vue';
+const Productos = [
+    { name: "Lapiz", price: 5, url: "https://dismartgt.com/cdn/shop/files/lapizjumbomaped_Mesadetrabajo1_400x.png?v=1690300926" },
+    { name: "Borrador", price: 10, url: "https://dismartgt.com/cdn/shop/files/borradorminitechnic_Mesadetrabajo1_400x.png?v=1690495408" },
+    { name: "Tijera", price: 15, url: "https://dismartgt.com/cdn/shop/products/tijera6.5sinpuntaweb_Mesadetrabajo1_400x.png?v=1640619753" },
+    { name: "Boligrafo", price: 20, url: "https://dismartgt.com/cdn/shop/products/roundsticrojo_Mesadetrabajo1_400x.png?v=1641313175" },
+    { name: "Resaltador", price: 25, url: "https://dismartgt.com/cdn/shop/products/foskaceleste_Mesadetrabajo1_400x.png?v=1642431321" }
+]
+const carrito = ref([])
+const Carrito = (index) => {
+    carrito.value.push(index)
+    suma.value += index.price
+}
+const suma = ref(0)
+</script>
+<template>
+    <ul v-for="index in Productos" :key="index.name">
+        <br>
+        <br>
+        <li>
+            {{ index.name }} : {{ index.price }} Bs <img :src="index.url" style="border-radius: 40px;">
+            <button @click="Carrito(index)" style="margin: 0px 0px 0px 150px ;">AñadirCarrito</button>
+            <br><br><br><br><br>
+        </li>
+    </ul>
+    <Hijo :carrito="carrito" :suma="suma">
+    </Hijo>
+</template>
+
+<script setup>
+defineProps(['carrito','suma']);
+</script>
+<template>
+  <!-- Inicio del Carrito -->
+  <ul>
+    <n style="color: white; font-size: 50px;">Añadido A Carrito</n>
+    <li v-for="producto in carrito" :key="producto.name">
+      {{ producto.name }} - {{ producto.price }}
+    </li>
+  </ul>
+  <!-- Muestra el suma -->
+  <p>Total: {{ suma }}</p>
+  <!-- Fin del Carrito -->
+</template>
+*/
+
+
+/*<script setup>
+Lista de Tareas con Estado de Completado:
+Crea una página que muestre una lista de tareas con checkboxes para indicar si una tarea está completada o no.
+Utiliza un arreglo de objetos para representar las tareas, cada objeto debe tener propiedades como nombre y completada.
+Implementa una función que actualice el estado de completado cuando se hace clic en el checkbox. 
+const Tareas = [
+    { nombre: "Hacer la compra", completada: false },
+    { nombre: "Preparar la cena", completada: true },
+    { nombre: "Hacer ejercicio", completada: false },
+    { nombre: "Leer un libro", completada: false },
+    { nombre: "Llamar a un amigo", completada: true },
+];
+</script>
+<template>
+    <ul>
+        <li v-for="index in Tareas" :key="index.nombre">
+            {{ index.nombre }} : <input type="checkbox" v-model="index.completada" style="border-radius: 50px;">
+        </li>
+    </ul>
+</template>*/

@@ -1,44 +1,94 @@
-<script setup>
-/* hacer una pagina de productos e imagenes con name, price and url with añadir a carrito y añada
-componente hijo(props) el precio el total si se puede */
-import { ref } from 'vue';
-import Hijo from './components/Hijo.vue';
-
-const Productos = [
-    { name: "Lapiz", price: 5, url: "https://dismartgt.com/cdn/shop/files/lapizjumbomaped_Mesadetrabajo1_400x.png?v=1690300926" },
-    { name: "Borrador", price: 10, url: "https://dismartgt.com/cdn/shop/files/borradorminitechnic_Mesadetrabajo1_400x.png?v=1690495408" },
-    { name: "Tijera", price: 15, url: "https://dismartgt.com/cdn/shop/products/tijera6.5sinpuntaweb_Mesadetrabajo1_400x.png?v=1640619753" },
-    { name: "Boligrafo", price: 20, url: "https://dismartgt.com/cdn/shop/products/roundsticrojo_Mesadetrabajo1_400x.png?v=1641313175" },
-    { name: "Resaltador", price: 25, url: "https://dismartgt.com/cdn/shop/products/foskaceleste_Mesadetrabajo1_400x.png?v=1642431321" }
-]
-
-const carrito = ref([])
-
-const Carrito = (index) => {
-    carrito.value.push(index)
-    suma.value+=index.price
-}
-const suma = ref(0)
-
-
-</script>
-
 <template>
-    <ul v-for="index in Productos" :key="index.name">
-        <br>
-        <br>
-        <li>
-            {{ index.name }} : {{ index.price }} Bs <img :src="index.url" style="border-radius: 40px;">
-            <button @click="Carrito(index)" style="margin: 0px 0px 0px 150px ;">AñadirCarrito</button>
-            <br><br><br><br><br>
-        </li>
-    </ul>
-    
-
-    <Hijo :carrito="carrito" :suma="suma">
-    </Hijo>
-    
-</template>
-
-
-<style scoped></style>
+    <div>
+      <h2>Formulario de Registro de Usuarios</h2>
+  
+      <form @submit.prevent="registrarUsuario">
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" v-model="usuario.nombre" required />
+        </div>
+  
+        <div>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" v-model="usuario.email" required />
+          <span v-if="!validarCorreo">@ Correo electrónico no válido</span>
+        </div>
+  
+        <div>
+          <label for="password">Contraseña:</label>
+          <input type="password" v-model="usuario.password" required />
+        </div>
+  
+        <button type="submit">Registrarse</button>
+      </form>
+  
+      <div v-if="registroExitoso">
+        <p>¡Registro exitoso! Bienvenido, {{ usuario.nombre }}.</p>
+      </div>
+     
+    </div>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        usuario: {
+          nombre: '',
+          email: '',
+          password: ''
+        },
+        registroExitoso: false
+      };
+    },
+    computed: {
+      validarCorreo() {
+        // Validación simple para verificar la presencia de "@" en el correo electrónico
+        return this.usuario.email.includes('@');
+      }
+    },
+    methods: {
+      registrarUsuario() {
+        // Lógica para registrar al usuario (puedes enviar los datos al servidor aquí)
+        // Aquí solo simulo un registro exitoso
+        this.registroExitoso = true;
+      }
+    }
+  };
+  </script>
+  
+  <style scoped>
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 20px;
+    }
+  
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #45a049;
+    }
+  
+    span {
+      color: red;
+    }
+  </style>
+  
