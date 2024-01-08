@@ -1,34 +1,31 @@
-<script setup lang="js">
+<script setup>
+
 import { ref } from 'vue';
-
-const cursos = ref([]); // Donde se almacenarán los cursos
-let titulo = ''; // Usa let en lugar de const
-let tiempo = ''; // Usa let en lugar de const
-
-const addCourse = () => {
-  if (titulo && tiempo) {
-    cursos.value.push({ titulo, tiempo: parseInt(tiempo) });
-    titulo = ''; // Limpia después de agregar
-    tiempo = ''; // Limpia después de agregar
-  }
-};
+import Hijo from './components/Hijo.vue';
+const Productos = [
+    { name: "Lapiz", price: 5, url: "https://dismartgt.com/cdn/shop/files/lapizjumbomaped_Mesadetrabajo1_400x.png?v=1690300926" },
+    { name: "Borrador", price: 10, url: "https://dismartgt.com/cdn/shop/files/borradorminitechnic_Mesadetrabajo1_400x.png?v=1690495408" },
+    { name: "Tijera", price: 15, url: "https://dismartgt.com/cdn/shop/products/tijera6.5sinpuntaweb_Mesadetrabajo1_400x.png?v=1640619753" },
+    { name: "Boligrafo", price: 20, url: "https://dismartgt.com/cdn/shop/products/roundsticrojo_Mesadetrabajo1_400x.png?v=1641313175" },
+    { name: "Resaltador", price: 25, url: "https://dismartgt.com/cdn/shop/products/foskaceleste_Mesadetrabajo1_400x.png?v=1642431321" }
+]
+const carrito = ref([])
+const Carrito = (index) => {
+    carrito.value.push(index)
+    suma.value += index.price
+}
+const suma = ref(0)
 </script>
-
 <template>
-  <div>
-    <label for="Titulo">Titulo Curso: </label>
-    <input type="text" name="titulo" v-model="titulo">
-    <br>
-    <label for="Tiempo">Tiempo: </label>
-    <input type="number" name="Tiempo" v-model="tiempo">
-    <button @click="addCourse">Añadir Curso</button>
-  </div>
-  <div>
-    <ul v-if="cursos.length">
-      <li v-for="(curso, index) in cursos" :key="index">
-        {{ curso.titulo }} : {{ curso.tiempo }}
-      </li>
+    <ul v-for="index in Productos" :key="index.name">
+        <br>
+        <br>
+        <li>
+            {{ index.name }} : {{ index.price }} Bs <img :src="index.url" style="border-radius: 40px;">
+            <button @click="Carrito(index)" style="margin: 0px 0px 0px 150px ;">AñadirCarrito</button>
+            <br><br><br><br><br>
+        </li>
     </ul>
-    <p v-else>No hay cursos registrados.</p>
-  </div>
+    <Hijo :carrito="carrito" :suma="suma">
+    </Hijo>
 </template>
