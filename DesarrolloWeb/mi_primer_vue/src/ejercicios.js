@@ -993,3 +993,205 @@ const Tareas = [
   
 
 */
+
+
+/*
+<script setup>
+import { ref } from 'vue';
+Tienda en Línea:
+Desarrolla una pequeña tienda en línea con una lista 
+de productos, detalles del producto y un carrito de compras.
+Permite realizar compras simuladas.
+const Tienda = [
+    { name: "LechePil", price: 6.5 },
+    { name: "Chisito", price: 1 },
+    { name: "ChisitoPicante", price: 1 },
+    { name: "Pilfrut", price: 1 },
+    { name: "Yogurt", price: 1 },
+    { name: "LecheAvena", price: 2 },
+    { name: "Mostaza", price: 1.5 },
+    { name: "Oreo", price: 2 },
+    { name: "Pipoquin", price: 0.5 },
+    { name: "Regia", price: 8.5 },
+    { name: "Chiquichoc", price: 2 },
+    { name: "ChokoSoda", price: 2.5 },
+    { name: "Cracker", price: 6 },
+    { name: "ClubSocial", price: 2 },
+    { name: "WaferGrande", price: 4 },
+    { name: "WaferPequeño", price: 1 },
+    { name: "Moraditas", price: 2.5 },
+    { name: "Gauchitas", price: 2.5 },
+    { name: "Aceite", price: 10 },
+    { name: "Nosotras", price: 8 },
+    { name: "kotex", price: 8 },
+    { name: "CocaColaGorda", price: 14 },
+    { name: "CocaColaRetornable", price: 7.5 },
+    { name: "ColaCola500ml", price: 5 },
+    { name: "ColaCola300ml", price: 3 },
+    { name: "FantaGorda", price: 13 },
+    { name: "CocaColaRetornableFria", price: 8 },
+    { name: "Omo", price: 4 },
+    { name: "Surf", price: 3.5 },
+    { name: "Patito", price: 3 },
+    { name: "Mayoneza", price: 1.5 },
+    { name: "Ketchup", price: 1.5 },
+    { name: "MostazaPicante", price: 2 },
+    { name: "TodoBrillo", price: 10 },
+    { name: "Alcohol", price: 2.5 },
+    { name: "PepsiBlack", price: 10 },
+    { name: "Pepsi", price: 11 },
+    { name: "PepsiPequeño", price: 5 },
+    { name: "PapelHigienicoBlanco", price: 1.5 },
+    { name: "PapelHigienicoPlomo", price: 1 },
+    { name: "Sardina", price: 10 },
+    { name: "Picadillo", price: 2.5 },
+    { name: "Atun", price: 5 },
+    { name: "AcuariosGorda", price: 14 },
+    { name: "Salvieti", price: 10 },
+    { name: "Tanpico", price: 12 },
+    { name: "PowerAdePequeña", price: 6 },
+    { name: "PowerAdeGrande", price: 10 },
+    { name: "Paceña", price: 9 },
+    { name: "Taquiña", price: 5 },
+    { name: "SchneiderPequeña", price: 6 },
+    { name: "SchneiderGrande", price: 10 },
+    { name: "Magistral", price: 13 },
+    { name: "Guantes", price: 10 },
+    { name: "Top", price: 2 },
+    { name: "Bolivar", price: 5 },
+    { name: "NachosNax", price: 2 },
+    { name: "ColgatePequeño", price: 5 },
+    { name: "ColgateGrande", price: 10 },
+    { name: "Tasos", price: 1 },
+    { name: "Chubi Chubi", price: 1.5 },
+    { name: "Maltin", price: 5 },
+    { name: "Topline", price: 2 },
+    { name: "Beldent", price: 2 },
+    { name: "Groso", price: 0.5 },
+    { name: "Maicena", price: 4 },
+    { name: "FantaPequeña", price: 5 },
+    { name: "Baton", price: 2 },
+    { name: "DonVictorio", price: 8 },
+    { name: "Lazzaroni", price: 5 },
+    { name: "Azucar", price: 7 },
+    { name: "Arroz", price: 7 },
+    { name: "Harina", price: 7 },
+    { name: "Sedal", price: 3 },
+    { name: "PuraVida", price: 13 },
+    { name: "DelValle", price: 15 },
+    { name: "DelValleFresh", price: 12 },
+    { name: "Genio", price: 2 },
+    { name: "DñGusta", price: 0.5 },
+    { name: "PolvoDeHornear", price: 3 },
+    { name: "FantaRetornable", price: 7.5 },
+    { name: "FantaRetornableFria", price: 8 },
+    { name: "Alikal", price: 3.5 },
+    { name: "Rasuradora", price: 3.5 },
+    { name: "PickesosNormales", price: 2 },
+    { name: "PickesosPicantes", price: 2 },
+    { name: "bon o Bon", price: 1 },
+    { name: "Nucita", price: 0.5 },
+    { name: "Chicolac", price: 1.5 }
+];
+const carrito = ref([])
+const total = ref(0)
+const AñadirCarrito = (valor) => {
+    carrito.value.push(valor)
+    total.value += valor.price
+}
+</script>
+<template>
+    <div class="container">
+        <h1 class="title">Tienda-Juliana</h1>
+
+        <div class="tabla-productos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="valor in Tienda" :key="valor.name">
+                        <td>{{ valor.name }}</td>
+                        <td>{{ valor.price }} Bs</td>
+                        <td>
+                            <button @click="AñadirCarrito(valor)" class="btn-añadir">Añadir al Carrito</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tabla-carrito">
+            <h5>Carrito</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="valor in carrito" :key="valor.name">
+                        <td>{{ valor.name }}</td>
+                        <td>{{ valor.price }} Bs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="total">
+            <h1>TOTAL: {{ total }} Bs</h1>
+        </div>
+    </div>
+</template>
+<style scoped>
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    color: aqua;
+    text-align: center;
+}
+
+.tabla-productos,
+.tabla-carrito,
+.total {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.btn-añadir {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+</style>*/
