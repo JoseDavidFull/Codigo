@@ -600,8 +600,6 @@ const seguimiento = ref([])
 </template>
 */
 
-
-
 /*<script setup>
 lista de frutas y boton de añadir y añado aparece 
 import { ref } from "vue"
@@ -626,9 +624,6 @@ const añadir = (fruta) => {
     </li>
   </ul>
 </template>*/
-
-
-
 
 /*<script setup lang="js">
 v-for con Lista de Objetos:
@@ -661,9 +656,6 @@ const Productos = [
     <slot name="Products"></slot>
 </template>
 */
-
-
-
 
 /*
 <script setup>
@@ -723,10 +715,7 @@ const suma = computed(()=>{
   <input v-model="numero1" type="number">
   <input v-model="numero2" type="number">
   <h1>{{ suma }}</h1>
-</template>*/ 
-
-
-
+</template>*/
 
 /* 
 
@@ -817,10 +806,6 @@ const suma = computed(()=>{
 
 */
 
-
-
-
-
 /*
 <script setup>
 hacer una pagina de productos e imagenes con name, price and url with añadir a carrito y añada
@@ -872,7 +857,6 @@ defineProps(['carrito','suma']);
 </template>
 */
 
-
 /*<script setup>
 Lista de Tareas con Estado de Completado:
 Crea una página que muestre una lista de tareas con checkboxes para indicar si una tarea está completada o no.
@@ -893,8 +877,6 @@ const Tareas = [
         </li>
     </ul>
 </template>*/
-
-
 
 /*
 <template>
@@ -993,7 +975,6 @@ const Tareas = [
   
 
 */
-
 
 /*
 <script setup>
@@ -1195,3 +1176,54 @@ th {
     border-radius: 4px;
 }
 </style>*/
+
+/*<script setup>
+import { ref } from 'vue';
+Crea un componente que cambie el color de fondo de un elemento 
+div en tiempo real. Utiliza v-bind:style para enlazar el color 
+a una variable que pueda cambiar con el tiempo. 
+const cambiar = ref(false)
+const Cambio = ()=>{
+    cambiar.value = !cambiar.value
+}
+</script>
+<template>
+    <div>
+        <button @mouseover="Cambio"  @mouseout="Cambio"  v-bind:style="{backgroundColor: cambiar ? 'aqua' : 'blue'}"></button>
+    </div>
+</template>
+<style scoped>
+button{
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+}
+
+button{
+    background-color: blue;
+
+  }
+</style>*/
+
+/*<script setup>
+import { ref } from 'vue';
+Desarrolla un componente que ajuste sus estilos según el valor
+ de una propiedad booleana. Por ejemplo, cambia el fondo a verde 
+ si una propiedad true es verdadera y a rojo si es falsa. 
+const valor = ref(false)
+const Cambiar = ()=>{
+    valor.value = !valor.value
+}
+</script>
+<template>
+    <div class="mostrar" @click="Cambiar" v-bind:style="{'background-color' : valor ? 'red' : 'green'}">  
+    </div>
+</template>
+<style scoped>
+.mostrar{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+</style>
+*/
