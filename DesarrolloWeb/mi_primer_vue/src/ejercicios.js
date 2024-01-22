@@ -1333,3 +1333,54 @@ const  Update =() =>{
     color: red;
 }
 </style>*/
+
+
+
+
+/*<script setup>
+import { ref } from 'vue';
+
+const contador = ref(0)
+const seguimiento = ref([])
+
+const incremento = () => {
+    contador.value++
+}
+
+const guardar = () => {
+    seguimiento.value.push(contador.value)
+}
+
+const eliminar = () => {
+    seguimiento.value.pop()
+}
+
+const reiniciar = () => {
+    seguimiento.value = []
+    contador.value = 0
+}
+
+const editar = (index) => {
+    const nuevoValor = prompt('Ingrese el nuevo valor:')
+    if (nuevoValor !== null) {
+        seguimiento.value[index] = parseInt(nuevoValor)
+    }
+}
+</script>
+
+<template>
+    <div>
+        <button @click="incremento">Incrementar</button>
+        <h1>{{ contador }}</h1>
+        <button @click="guardar">Guardar</button>
+        <button @click="eliminar">Eliminar último</button>
+        <button @click="reiniciar">Reiniciar</button>
+        <ul>
+            <li v-for="(valor, index) in seguimiento" :key="index">
+                {{ valor }}
+                <button @click="() => editar(index)">Editar</button>
+            </li>
+        </ul>
+    </div>
+</template>
+*/
