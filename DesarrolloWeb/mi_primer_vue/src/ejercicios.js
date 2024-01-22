@@ -1336,6 +1336,7 @@ const  Update =() =>{
 
 
 
+<<<<<<< HEAD
 
 /*<script setup>
 import { ref } from 'vue';
@@ -1382,5 +1383,39 @@ const editar = (index) => {
             </li>
         </ul>
     </div>
+=======
+/*<script setup>
+Slot de Lista:
+Crea un componente que acepte una lista de elementos y utilice un slot para mostrar cada elemento de la lista.
+En el componente padre, utiliza el componente hijo proporcionando una lista de elementos para ser renderizados en el slot.
+import Hijo from './components/Hijo.vue';
+const Lista =[
+    {name : "David"},
+    {name : "Jose"},
+    {name : "eli"},
+    {name : "bertha"},
+    {name : "jhosep"}
+]
+</script>
+<template>
+    <Hijo #Lista>
+        <ul>
+            <li v-for="index in Lista" :key="index.name" v-bind:class="{Red : Lista = 'red'}">
+                {{ index.name }}
+            </li>
+        </ul>
+    </Hijo>
+</template>
+<style scoped>
+.Red{
+    color: red;
+}
+</style>
+
+<script setup>
+</script>
+<template>
+    <slot name="Lista"></slot>
+>>>>>>> a4b20c9fd3ed7d0ddfa50e9aaf7ee5f61fe16383
 </template>
 */
