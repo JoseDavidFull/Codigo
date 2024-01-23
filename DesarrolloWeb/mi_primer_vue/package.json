@@ -10,7 +10,10 @@
   "dependencies": {
     "gsap": "^3.12.4",
     "leaflet": "^1.9.4",
-    "vue": "^3.3.4"
+    "pinia": "^2.1.6",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "vuex": "^4.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",

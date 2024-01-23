@@ -1336,7 +1336,6 @@ const  Update =() =>{
 
 
 
-<<<<<<< HEAD
 
 /*<script setup>
 import { ref } from 'vue';
@@ -1416,6 +1415,5 @@ const Lista =[
 </script>
 <template>
     <slot name="Lista"></slot>
->>>>>>> a4b20c9fd3ed7d0ddfa50e9aaf7ee5f61fe16383
 </template>
 */
