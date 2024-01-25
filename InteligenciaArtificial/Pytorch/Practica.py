@@ -105,3 +105,21 @@ import torch
 tensor = torch.randint(0,11,(2,3))
 print(tensor)'''
 
+
+'''
+Operaciones Estadísticas Avanzadas:
+Crea una matriz de tamaño 6x8 con números aleatorios entre -10 y 10. 
+Calcula la varianza y la desviación estándar de cada fila.
+import numpy as np
+matriz = np.random.randint(-10,10,(6,8))
+desviacion = np.std(matriz,axis=0)
+print(desviacion)'''
+
+'''Conversión de Tensor a NumPy en un Escenario de Aprendizaje Profundo:
+Imagina que estás trabajando en un proyecto de aprendizaje profundo y tienes un tensor 
+tridimensional de tamaño (batch_size, altura, ancho). Convierte este tensor a un arreglo NumPy utilizando tensor.numpy()..
+import torch
+import numpy as np
+tensor = torch.randn(5,5,5)
+Matriz = tensor.numpy()
+print(Matriz)'''
