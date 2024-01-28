@@ -138,3 +138,27 @@ x = torch.randn(4000)
 l = linear(x)
 print(l) # reduce los datos de 4000 a 10 in_features => entrada, out_features => salida 
 '''
+
+
+
+
+'''
+Múltiples Capas Lineales:
+Crea dos capas lineales: una que tome 10 características de entrada 
+y las reduzca a 5 características, y otra que tome 5 características 
+y las expanda a 8 características.
+Genera un tensor de entrada con 10 valores aleatorios 
+y aplica ambas capas en secuencia.
+Imprime los tensores resultantes después de cada transformación.
+import torch
+import torch.nn as nn
+linear1 = nn.Linear(in_features=10, out_features=5 )
+linear2 = nn.Linear(in_features=5, out_features=8)
+tensor = torch.randn(10)
+tensor1 = torch.randn(5)
+y = linear1(tensor)
+z = linear2(tensor1)
+print(y)
+print(z)
+'''
+
