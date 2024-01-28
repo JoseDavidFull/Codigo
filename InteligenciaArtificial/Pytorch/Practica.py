@@ -123,3 +123,18 @@ import numpy as np
 tensor = torch.randn(5,5,5)
 Matriz = tensor.numpy()
 print(Matriz)'''
+
+
+
+
+
+''' creacion de un tensor linear que reduce 4000 datos a solo 10
+import torch
+import torch.nn as nn
+
+linear = nn.Linear(in_features = 4000, out_features = 10)
+
+x = torch.randn(4000)
+l = linear(x)
+print(l) # reduce los datos de 4000 a 10 in_features => entrada, out_features => salida 
+'''
