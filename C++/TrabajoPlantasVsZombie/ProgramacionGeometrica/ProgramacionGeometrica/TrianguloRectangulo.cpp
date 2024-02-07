@@ -1,1 +1,0 @@
-#include "TrianguloRectangulo.h"

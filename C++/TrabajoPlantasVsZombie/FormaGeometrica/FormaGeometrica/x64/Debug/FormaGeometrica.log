@@ -1,7 +1,0 @@
-﻿  Forma.cpp
-C:\Programacion\C++\TrabajoPlantasVsZombie\FormaGeometrica\FormaGeometrica\Forma.cpp(15,17): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Programacion\C++\TrabajoPlantasVsZombie\FormaGeometrica\FormaGeometrica\Forma.cpp(41,14): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Programacion\C++\TrabajoPlantasVsZombie\FormaGeometrica\FormaGeometrica\Forma.cpp(68,20): warning C4244: 'return': conversión de 'int' a 'float'; posible pérdida de datos
-  FormaGeometrica.cpp
-  Generando código...
-  FormaGeometrica.vcxproj -> C:\Programacion\C++\TrabajoPlantasVsZombie\FormaGeometrica\x64\Debug\FormaGeometrica.exe

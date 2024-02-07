@@ -1417,3 +1417,43 @@ const Lista =[
     <slot name="Lista"></slot>
 </template>
 */
+
+
+
+
+
+/*
+<template>
+    <div>
+        <video src="../src/assets/video/cariño.mp4"  muted autoplay="autoplay" width="450px" height="350px"></video>
+      <p>¿Me quieres?</p>
+      <button @click="respuesta('si')">Sí</button>
+      <button @click="respuesta('no')">No</button>
+      <h1 v-if="respuestaNo > 0">¡Oh no! 😢</h1>
+      <h1 v-else-if="respuestaSi > 1">Yo tambien te amo ❤️🥰</h1>
+    </div>
+  </template>
+  
+  <script setup>
+  import { ref } from 'vue';
+  
+  const respuestaNo = ref(0);
+  const respuestaSi = ref(1)
+  const respuesta = (opcion) => {
+    if (opcion === 'no') {
+      respuestaNo.value += 1;
+    }
+    else{
+        if(opcion === 'si'){
+            respuestaSi.value+=1
+        }
+    }
+  };
+  </script>
+  
+  <style scoped>
+
+  </style>
+  
+
+*/
