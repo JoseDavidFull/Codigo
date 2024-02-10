@@ -461,8 +461,6 @@ console.log(mostrar.datos());
 const buscar = mostrar.array.includes(11);
 console.log(mostrar.mostrar(buscar));*/
 
-
-
 /*Crear una clase "Rectángulo" con propiedades de ancho y alto. Agrega 
 métodos para calcular el área y el perímetro del rectángulo.
 
@@ -506,8 +504,6 @@ class Vehiculo{
 const datos = new Vehiculo(800);
 datos.mostrar()*/
 
-
-
 /*Sistema de Gestión de Usuarios:
 Crea una clase Usuario con propiedades 
 como nombre, edad y tipo (normal, 
@@ -536,14 +532,13 @@ class Usuario{
 const ver = new Usuario("David",18)
 ver.verificar()*/
 
-
 /*Gestión de Productos Crea una clase 
 Producto con propiedades como nombre, 
 precio y stock. Implementa métodos para 
 agregar productos al inventario, 
 calcular el valor total de los productos 
 y verificar si un producto está agotado.
-*/
+
 class Producto{
     constructor(stock){
         //this.nombre = nombre;
@@ -562,4 +557,52 @@ class Producto{
 
 const verificar = new Producto(40);
 verificar.MostrarProducto();
+*/
 
+/*Crea una clase llamada Persona que tenga propiedades como 
+nombre, edad y método para imprimir información básica de la persona. 
+
+class Persona {
+  //creacion de la clase persona
+  constructor(name, age) {
+    //constructor con los atributos name and age
+    this.name = name;
+    this.age = age;
+  }
+  info() {
+    //metod
+    return ` Name is: ${this.name} Age is : ${this.age}`;
+  }
+}
+
+const Instance = new Persona("David", 25);
+
+console.log(Instance.info());*/
+
+/*
+Ejercicio 2: Herencia de Clases
+Crea una clase base llamada Vehiculo con propiedades como
+ marca y modelo. Luego, crea una clase derivada llamada 
+ Automovil que herede de la clase Vehiculo y tenga propiedades 
+ adicionales como número de puertas. */
+
+
+class Vehiculo{
+	constructor(marca,modelo){
+		this.marca = marca
+		this.modelo = modelo
+	}
+}
+
+class Automovil extends Vehiculo{
+	constructor(marca,modelo,color){
+		super(marca,modelo)
+			this.color = color
+	}
+	info(){
+		return `Marca : ${this.marca} Model ${this.modelo} Color ${this.color}`
+	}
+}
+
+const loca = new Automovil("Audi","Honda","Red");
+console.log(loca.info());

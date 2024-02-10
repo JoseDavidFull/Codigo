@@ -1,55 +1,48 @@
+/*añade ahora user con home, about, contact  */
+
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import("../views/HomeView.vue"),
-    props: {
-      information: "Información estática para HomeView",
-    },
+    component: () => import("../views/HomeView.vue")
   },
   {
-    path: "/about",
-    name: "about",
-    component: () => import("../views/AboutView.vue"),
-    props: {
-      information: "Información estática para AboutView",
-    },
+    path : "/about",
+    name : "about",
+    component : () => import("../views/AboutView.vue")
   },
   {
-    path: "/carrito",
-    name: "carrito",
-    component: () => import("../views/CarritoView.vue"),
-    props: {
-      information: "Información estática para CarritoView",
-    },
+    path : "/contact",
+    name : "contact",
+    component : () => import("../views/ContactView.vue")
   },
   {
-    path: "/catalogo/:productoId",
-    name: "catalogo",
-    component: () => import("../views/CatalogoView.vue"),
-    props: true,
+    path:  "/user",
+    name : "user",
+    component : () => import("../views/UserView.vue")
+  },
+  { 
+    path : "/history",
+    name : "history",
+    component : () => import("../views/HistoryView.vue")
   },
   {
-    path: "/detalle/:productoId",
-    name: "detalle",
-    component: () => import("../views/DetalleView.vue"),
-    props: true,
+    path : "/police",
+    name : "police",
+    component : () => import("../views/PoliceView.vue")
   },
   {
-    path: "/producto",
-    name: "producto",
-    component: () => import("../views/ProductoView.vue"),
-    props: {
-      information: "Información estática para ProductoView",
-    },
-  },
-];
+    path : "/pikachú",
+    name : "pikachú",
+    component : () => import("../views/PikachúView.vue")
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
-});
+  routes
+})
 
-export default router;
+export default router

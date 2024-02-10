@@ -286,3 +286,13 @@ class Persona:#clase persona
 Ver = Persona("David",25,"AbdonJurado")
 print(Ver.Informacion())'''
 
+
+
+'''
+Herencia de Animales:
+Crea una clase base llamada Animal con atributos como nombre y edad.
+Deriva clases específicas como Perro, Gato y Pájaro que hereden de 
+Animal con atributos adicionales y métodos específicos.
+'''
+
+

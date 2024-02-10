@@ -286,3 +286,18 @@ for n in nums:
 print(suma)'''
 
 
+'''
+Promedio de Lista:
+Crea una lista de números.
+Calcula el promedio de los números en la lista.
+
+x = list([1,2,3,4,5,6,7,8,9,10])
+
+suma = 0
+for n in x:
+    suma+=n
+    promedio = suma/n
+
+print("El promedio es: ",promedio)'''
+
+

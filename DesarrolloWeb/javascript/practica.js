@@ -1932,5 +1932,117 @@ function Eliminar(busqueda){
 console.log(Eliminar());
 console.log(array);*/
 
+/*
+function Revertir(vari) {
+  return vari.split("")
+}
+console.log(Revertir("ILoveYou"));
+*/
 
 
+/*Escribe una función que tome dos números como parámetros y
+ devuelva la suma de esos dos números.
+function Suma(n1,n2) {
+    return n1+n2
+}
+
+console.log(Suma(5,5)); */
+
+
+/*Crea una función que tome un array de números como parámetro
+ y devuelva la suma de todos los elementos del array. 
+
+const array = [1,2,3,4,5,6,7,8,9,10]
+
+function suma(sum = 0) {
+    for(x=1;x<=array.length;x++){
+        sum+=x
+    }
+    return sum
+}
+
+console.log(suma())*/
+
+
+
+/*Ordenar números de manera ascendente:
+
+Crea un array de números.
+Utiliza el método sort para ordenar los números de manera ascendente.
+Muestra el array resultante. 
+const array = [9,8,7,6,5,4,3,2,1]
+function Ascendente(x) {
+    return x = array.sort((a,b)=>{
+        return a-b
+    })
+}
+console.log(Ascendente());*/
+
+
+/*Convertir strings a mayúsculas:
+Crea un array de strings.
+Utiliza el método map para convertir cada string a mayúsculas.
+Muestra el array resultante.
+
+const array = ["hola","como","estas","bertha"]
+
+function Mayuscula(x) {
+    x = array.map((y)=>{
+        return y.toUpperCase()
+    })
+    return x
+}
+
+console.log(Mayuscula());*/
+
+
+/*Determinar el tipo de número (positivo, negativo o cero):
+Toma un número como entrada.
+Utiliza el operador ternario para determinar si el número es positivo, negativo o cero.
+Muestra el resultado. 
+
+
+
+function Verificiar(n) {
+    return n > 1 ? "Positivo" : "Negativo"
+}
+
+console.log(Verificiar(-5));*/
+
+
+/*Crea dos variables de tipo cadena y únelas utilizando
+ el método concat(). Muestra el resultado. 
+const x = "Hola"
+const y = " Como estas ?"
+function Concatenar(z) {
+    z = x.concat(y)
+    return z
+}
+console.log(Concatenar());*/
+
+
+
+/*Crea una función que tome una cadena como parámetro y 
+devuelva true si comienza con la letra 
+"T" y false en caso contrario. 
+const x = "Teleferico"
+function Busqueda(y) {
+    y = x.endsWith("o")
+    return y
+}
+console.log(Busqueda());
+*/
+
+/*Crea una función que tome una cadena y una palabra como 
+parámetros, y devuelva true si la cadena incluye la palabra 
+y false en caso contrario.*/
+
+
+const palabra = "Hola"
+
+function Busqueda(x) {
+    x=  palabra.includes("Bertha")
+    return x
+}
+
+console.log(Busqueda());

@@ -1457,3 +1457,82 @@ const Lista =[
   
 
 */
+
+/*
+
+<script setup>
+import { ref } from "vue";
+
+const jsSelected = ref(false);
+const tsSelected = ref(false);
+
+const Elegir = (opcion) => {
+    if (opcion === 'js') {
+        jsSelected.value = true;
+    } else if (opcion === 'ts') {
+        tsSelected.value = true;
+    }
+}
+</script>
+
+<template>
+    <h1>A quien Elegiras ? </h1>
+    <br>
+    <button @click="Elegir('js')">Javascript</button>
+    <button @click="Elegir('ts')">Typescript</button>
+    <h1 v-if="jsSelected">Ohh chido, sabes de lo que haces</h1>
+    <h1 v-else-if="tsSelected">Sabes de la tecnología</h1>
+</template>
+
+<style scoped>
+
+
+</style>
+
+
+
+
+*/
+
+
+/*<script setup>
+Crear un componente en Vue.js con dos botones, uno para 
+aplicar una clase y otro para quitarla. La clase debería 
+cambiar el tamaño del texto a 18px y el color a verde. 
+import { ref } from "vue";
+const color = ref("black")
+const palabra = ref('10px')
+function Colors() {
+  const colores = ['green', 'yellow']
+  color.value = colores[Math.floor(Math.random() * colores.length)]
+}
+function texts() {
+  const texto = ['18px', '30px', '25px']
+  palabra.value = texto[Math.floor(Math.random() * texto.length)]
+}
+</script>
+<template>
+  <button @click="Colors()">Cam bia_Color</button>
+  <h1 :style="{ color: color }">Color Texto</h1>
+  <button @click="texts()">Cambia_text</button>
+  <h1 :style="{'font-size': palabra }">Cambio_Letra</h1>
+</template>
+<style scoped></style>*/
+
+
+
+/*<script setup>
+Crear un componente en Vue.js que muestre un cuadro 
+de texto. Si el texto ingresado tiene más de 10 caracteres, 
+aplicar un estilo que cambie el color del texto a rojo; 
+de lo contrario, mantener el color negro.
+import { ref } from "vue"
+const palabra = ref('Ingresa Una palabra')
+</script>
+<template>
+  <h1>Ingresa Un Texto</h1>
+  <br>
+  <input type="text" v-model="palabra">
+  <h1 :style="{color : palabra.length > 10 ? 'red' : 'black'}">{{ palabra }}</h1>
+</template>
+<style scoped></style>*/
