@@ -11,6 +11,7 @@
         <router-link to="/history">History</router-link>
         <router-link to="/police">Police</router-link>
         <router-link to="/pikachú">Pikachú</router-link>
+        <router-link to="/acount">Acount</router-link>
     </div>
     <router-view></router-view>
 </template>

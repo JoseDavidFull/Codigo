@@ -189,7 +189,7 @@ for(var i in objeto){
 Dado un arreglo de nombres, utiliza el bucle for of para recorrer 
 todos los nombres e imprimirlos en la consola.
 
-const nombre = ["David","Jose","Elisabeth","Leo"]
+const nombre = ["David","Jose","Bertha"]
 for(let i of nombre){
     console.log(i);
 }

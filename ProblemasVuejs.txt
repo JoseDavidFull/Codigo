@@ -1536,3 +1536,5 @@ const palabra = ref('Ingresa Una palabra')
   <h1 :style="{color : palabra.length > 10 ? 'red' : 'black'}">{{ palabra }}</h1>
 </template>
 <style scoped></style>*/
+
+

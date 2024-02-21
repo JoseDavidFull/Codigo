@@ -1,5 +1,3 @@
-/*añade ahora user con home, about, contact  */
-
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
@@ -37,6 +35,11 @@ const routes = [
     path : "/pikachú",
     name : "pikachú",
     component : () => import("../views/PikachúView.vue")
+  },
+  {
+    path : "/acount",
+    name : "acount",
+    component : () => import("../views/AcountView.vue")
   }
 ]
 

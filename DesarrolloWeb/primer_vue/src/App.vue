@@ -1,25 +1,23 @@
-<script setup>
-import { ref } from "vue";
+<script setup lang="js">
+import Hijo from './components/Hijo.vue';
 
-const jsSelected = ref(false);
-const tsSelected = ref(false);
+/*Crea un componente que acepte una prop llamada
+persona que es un objeto con propiedades como nombre, 
+edad, y ocupacion. Muestra estas propiedades en el template. */
 
-const Elegir = (opcion) => {
-    if (opcion === 'js') {
-        jsSelected.value = true;
-    } else if (opcion === 'ts') {
-        tsSelected.value = true;
-    }
-}
+const persona = [
+    {name : "david", age : 25},
+    {name : "david", age : 12},
+    {name : "david", age : 51},
+    {name : "david", age : 16}
+]
+
 </script>
 
 <template>
-    <h1>A quien Elegiras ? </h1>
-    <br>
-    <button @click="Elegir('js')">Javascript</button>
-    <button @click="Elegir('ts')">Typescript</button>
-    <h1 v-if="jsSelected">Ohh chido, sabes de lo que haces</h1>
-    <h1 v-else-if="tsSelected">Sabes de la tecnología</h1>
+    <Hijo v-bind:persona="persona">
+
+    </hijo>
 </template>
 
 <style scoped>

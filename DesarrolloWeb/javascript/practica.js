@@ -2038,11 +2038,6 @@ parámetros, y devuelva true si la cadena incluye la palabra
 y false en caso contrario.*/
 
 
-const palabra = "Hola"
-
-function Busqueda(x) {
-    x=  palabra.includes("Bertha")
-    return x
-}
-
-console.log(Busqueda());
+const array = [1,2,3,4,5,6,7,8,9,10]
+const x = array.unshift(0)
+console.log(array);
