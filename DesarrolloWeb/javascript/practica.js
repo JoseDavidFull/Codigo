@@ -2035,9 +2035,30 @@ console.log(Busqueda());
 
 /*Crea una función que tome una cadena y una palabra como 
 parámetros, y devuelva true si la cadena incluye la palabra 
-y false en caso contrario.*/
+y false en caso contrario.
 
 
 const array = [1,2,3,4,5,6,7,8,9,10]
 const x = array.unshift(0)
-console.log(array);
+console.log(array);*/
+
+/*Filtrar números pares:
+Dado un array de números, utiliza el método de array para 
+filtrar solo los números pares. 
+var array = [1,2,3,4,5,6,7,8,9,10]
+for(var i=0;i<=array.length;i++){
+    if (i%2==0) {
+        console.log(i);
+    }
+}*/
+
+/*Concatenar arrays:
+Dados dos arrays, utiliza el método de array para 
+concatenarlos en un solo array. 
+var array1 = [1,2,3,4,5]
+var array2 = [6,7,8,9,10]
+
+var x = array1.concat(array2)
+
+var y = x.reverse()
+console.log(y);*/
