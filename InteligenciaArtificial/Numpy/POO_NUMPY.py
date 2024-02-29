@@ -78,3 +78,30 @@ class Estadisticas:
 
 Mostrar = Estadisticas((1,9))
 print(Mostrar.Desviacion())'''
+
+
+
+
+'''
+Clase Matriz:
+Crea una clase llamada Matriz que tenga un constructor 
+para inicializar una matriz NumPy y métodos para realizar 
+operaciones como la suma, resta y multiplicación de matrices.
+
+import numpy as np
+class Matriz:
+    def __init__(self, filas=5, columnas=10):
+        self.M = np.random.randn(filas, columnas)
+
+    def suma(self):
+        suma_total = np.sum(self.M)
+        print("Suma total de la matriz:")
+        print(suma_total)
+
+# Crear una instancia de la clase Matriz
+mi_matriz = Matriz(filas=5, columnas=10)
+
+# Llamar al método suma
+mi_matriz.suma()'''
+
+

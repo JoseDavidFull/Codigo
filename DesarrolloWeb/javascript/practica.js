@@ -1094,8 +1094,6 @@ const coche = {
 
 console.log(coche.marca, coche.modelo, coche.anio );*/
 
-
-
 /*Escribir una función llamada "esPar" que tome un número como 
 parámetro y devuelva true si es par, o false si es impar
 
@@ -1119,14 +1117,11 @@ const resultado = arreglo.shift();//metodos shoft que elimina el primer elemento
 console.log(`El resultado es ${arreglo}`); // usamos los templates literals
 console.log(`El elemento eliminado es ${resultado}`);*/
 
-
-
 /*Generar un número aleatorio entre 1 y 
 10 (ambos inclusive) y mostrarlo en 
 la consola.
 const numero = parseInt( Math.random(Math.floor)*10)
 console.log(numero);*/
-
 
 /*Crear una función que acepte dos 
 paráme
@@ -1169,7 +1164,6 @@ var cadena2 = "Como"
 var cadena3 = "Estas"
 const resultado = cadena1.concat(" ",cadena2," ", cadena3)
 console.log(resultado);*/
-
 
 /*Crear una clase Persona con los atributos nombre y edad. 
 Agregar un método validarEdad() que lance una excepción
@@ -1261,7 +1255,6 @@ const mostrarAuto = new Automovil("Baki","kawasaki",5);
 console.log(mostrarVe.Informacion());
 console.log(mostrarAuto.Enformacion());*/
 
-
 /*Crear una clase base llamada "Persona" con atributos 
 como "nombre" y "edad". Luego, crear subclases como 
 "Estudiante" y "Profesor" que hereden de "Persona" 
@@ -1300,8 +1293,6 @@ const Pr = new Profesor("Jose",26,"ProgramacionIntermedia");
 console.log(Es.InformacionEstudiante());
 console.log(Pr.InformacionProfesor());*/
 
-
-
 /*Función Ordenar Array: Crea una función ordenarArray que tome un array 
 de números como parámetro y devuelva el array ordenado de forma ascendente.
 
@@ -1313,7 +1304,6 @@ function ordenarArray() {
 
 console.log(ordenarArray());*/
 
-
 /*Función Potencia: Implementa una función potencia que tome 
 dos números como parámetros y devuelva el resultado de elevar 
 el primero a la potencia del segundo.
@@ -1322,7 +1312,6 @@ function Potencia(a,b) {
     return Math.pow(a,b)
 }
 console.log("El resultado es:"+Potencia(5,2));*/
-
 
 /*Suma de Elementos: Escribe una función 
 llamada sumarElementos que tome un array 
@@ -1424,8 +1413,6 @@ class Matematicas{
 console.log(Matematicas.suma(5,5));
 console.log(Matematicas.resta(20,8));*/
 
-
-
 /*Herencia de Dispositivos Móviles:
 Implementa una clase base llamada 
 "DispositivoMovil" con atributos como "marca" y 
@@ -1469,7 +1456,6 @@ console.log(mostrarSmartphone.mostrarSmartphone());
 const mostrarTablet = new Tablet("80Hzz","lg","P5");
 console.log(mostrarTablet.mostrarTablet());*/
 
-
 /*Calculadora: Implementar una calculadora 
 con métodos estáticos para realizar operaciones
  matemáticas.
@@ -1494,7 +1480,6 @@ con métodos estáticos para realizar operaciones
  }
 
 console.log(Calculadora.suma("La suma es: "+5,5));*/
-
 
 /*Conversión de Unidades: Crear una clase con 
 métodos estáticos que realicen conversiones 
@@ -1551,7 +1536,6 @@ function Multiplo(array) {
     return producto
 }
 console.log(Multiplo());*/
-
 
 /*Conversión de Monedas:
 Implementa una función que tome un array 
@@ -1656,8 +1640,6 @@ function Concatenar() {
   
   console.log(Concatenar()); // Output: "Hola Como Estas"*/
 
-
-
 /*Suma de Números: Escribe una función 
 que tome un array de números como 
 parámetro y devuelva la suma de todos 
@@ -1680,7 +1662,6 @@ devuelva el número más grande.
 var Array = [1,2,3,4,5,10,20,76,5,44,22,55,44]
 var mayor = Math.max(...Array)
 console.log("El mayor es: "+mayor);*/
-
 
 /*Combinar Arrays: Implementa una 
 función que tome dos arrays como 
@@ -1731,7 +1712,6 @@ function Descendente() {
 }
 console.log(Descendente());*/
 
-
 /*Herencia y Polimorfismo:
 Define una clase "Vehiculo" con 
 propiedades como "tipo" y 
@@ -1778,7 +1758,6 @@ console.log(MostrarAuto.Mostrar());
 MostrarMotocicleta = new Motocicleta(8000);
 console.log(MostrarMotocicleta.Mostrar());*/
 
-
 /*Herencia de Personas: Crea una clase 
 Persona con propiedades como nombre y 
 edad. Luego, crea subclases como 
@@ -1821,10 +1800,7 @@ const MostrarProfesor = new Profesor("Jose",59,"Fis500");
 console.log(MostrarEstudiante.MostrarE());
 console.log(MostrarProfesor.MostrarP());*/
 
-
 /**/
-
-
 
 /*Ordenamiento de números: Dado un arreglo de números, ordena 
 los números de manera ascendente utilizando el método sort().*/
@@ -1834,8 +1810,6 @@ var ascendente = Numeros.sort((a,b) =>{
     return a-b
 })
 console.log(ascendente);*/
-
-
 
 /*Clase Coche: Diseña una clase Coche con atributos como marca, 
 modelo y año. Agrega métodos para encender, apagar y acelerar el coche.
@@ -1853,7 +1827,6 @@ class Coche {//clase
 
 const Ver = new Coche("Zuzuki","Hf",1990)//objeto
 console.log(Ver.Informacion());*/
-
 
 /*Escribe una función que tome un array de números como 
 parámetro y devuelva la suma de todos los elementos.
@@ -1897,7 +1870,6 @@ Escribe una función que tome un array de números como parámetro
 
  */
 
-
 /*Crea una función que tome un array y un elemento como parámetros y devuelva true si el 
 elemento está presente en el array, y false en caso contrario. 
 
@@ -1916,8 +1888,6 @@ function Encontrar(encontrar){
 console.log(Encontrar());
 
 */
-
-
 
 /*Eliminar Elemento Específico:
 Crea una función que elimine todas las ocurrencias de un elemento específico en un array.
@@ -1939,7 +1909,6 @@ function Revertir(vari) {
 console.log(Revertir("ILoveYou"));
 */
 
-
 /*Escribe una función que tome dos números como parámetros y
  devuelva la suma de esos dos números.
 function Suma(n1,n2) {
@@ -1947,7 +1916,6 @@ function Suma(n1,n2) {
 }
 
 console.log(Suma(5,5)); */
-
 
 /*Crea una función que tome un array de números como parámetro
  y devuelva la suma de todos los elementos del array. 
@@ -1963,8 +1931,6 @@ function suma(sum = 0) {
 
 console.log(suma())*/
 
-
-
 /*Ordenar números de manera ascendente:
 
 Crea un array de números.
@@ -1977,7 +1943,6 @@ function Ascendente(x) {
     })
 }
 console.log(Ascendente());*/
-
 
 /*Convertir strings a mayúsculas:
 Crea un array de strings.
@@ -1995,7 +1960,6 @@ function Mayuscula(x) {
 
 console.log(Mayuscula());*/
 
-
 /*Determinar el tipo de número (positivo, negativo o cero):
 Toma un número como entrada.
 Utiliza el operador ternario para determinar si el número es positivo, negativo o cero.
@@ -2009,7 +1973,6 @@ function Verificiar(n) {
 
 console.log(Verificiar(-5));*/
 
-
 /*Crea dos variables de tipo cadena y únelas utilizando
  el método concat(). Muestra el resultado. 
 const x = "Hola"
@@ -2019,8 +1982,6 @@ function Concatenar(z) {
     return z
 }
 console.log(Concatenar());*/
-
-
 
 /*Crea una función que tome una cadena como parámetro y 
 devuelva true si comienza con la letra 
@@ -2062,3 +2023,66 @@ var x = array1.concat(array2)
 
 var y = x.reverse()
 console.log(y);*/
+
+/*
+// Ejercicio: Encuentra la suma de los elementos pares de un array.
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,30];
+function sumaElementosPares() {
+    var suma =0
+    for(var i=0;i<=numeros.length;i++){
+        if(numeros[i]%2==0){
+            suma+=numeros[i]
+        }
+    }
+    return suma
+  }
+  
+  console.log(sumaElementosPares()); // Debería imprimir la suma de los elementos pares.
+  */
+/*
+// Ejercicio: Crea un objeto "Libro" con un método para 
+//calcular el precio total de una cantidad de libros.
+
+const libro = {
+    titulo: "JavaScript Avanzado",
+    precio: 25,
+    calcularPrecioTotal(cantidad) {
+      return cantidad* this.precio
+    }
+  };
+  
+  console.log(libro.calcularPrecioTotal(5));
+   // Debería imprimir el precio total para 5 libros.
+  */
+
+   /*
+
+// Ejercicio: Crea una función que invierta las palabras en una cadena de texto.
+function invertirPalabras(cadena) {
+  return cadena.split(" ").reverse().join(" ")
+}
+
+const textoOriginal = "JavaScript and Python is Cool";
+console.log(invertirPalabras(textoOriginal));
+// Debería imprimir "genial es JavaScript".*/
+
+
+/*
+Ejercicio 4: Validar una Dirección de Correo Electrónico
+Escribe una función llamada validarCorreoElectronico que tome una
+ dirección de correo electrónico como argumento y devuelva true 
+ si sigue el formato estándar de un correo electrónico y false en caso contrario. */
+ const validator = require('validator');
+
+ function validarCorreoElectronico(email) {
+     if (validator.isEmail(email)) {
+         console.log("Correo electrónico válido");
+     } else {
+         console.log("Correo electrónico no válido");
+     }
+ 
+     return email;
+ }
+ 
+ validarCorreoElectronico('josesucullani@gmail.com');
+ 

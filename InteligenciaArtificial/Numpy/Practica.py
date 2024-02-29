@@ -582,3 +582,37 @@ for n in array:
         print(n)
         
 '''
+
+'''
+Ejercicio 2: Listas y Diccionarios
+. Crea una lista de números enteros y utiliza 
+un bucle para imprimir solo los números pares.
+
+lista = [1,2,3,4,5,6,7,8,9,10]
+dic = {"uno" : 1, "dos" : 2, "tres" : 3}
+
+for n in lista:
+    if n%2==0:
+        print(n)'''
+
+
+
+'''
+Ejercicio 3: Programación Orientada a Objetos
+3. Define una clase "Persona" con atributos como nombre, edad 
+y país. Crea una instancia de esa clase e imprime sus atributos.
+'''
+
+class Person:
+    def __init__(self,Name,Age,Pais):
+        self.Name = Name
+        self.Age = Age
+        self.Pais = Pais
+
+    def Info(self):
+        print(f"Name: {self.Name} Age: {self.Age} Pais: {self.Pais}")
+
+
+Mostrar = Person("David",25,"barcelona")
+
+Mostrar.Info()

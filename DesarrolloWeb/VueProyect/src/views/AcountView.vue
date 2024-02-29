@@ -1,9 +1,15 @@
 <script setup>
+/*Crea un componente de Vue.js que tenga un botón. Cuando
+ el usuario hace clic en el botón, cambia dinámicamente la 
+ clase del elemento para cambiar su apariencia. */
+
+
+
 
 </script>
 
 <template>
-    <h1 style="color: white;">My Acount</h1>
+    <button @click=""></button>
 </template>
 
 <style scoped>
