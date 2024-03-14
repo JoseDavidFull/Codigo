@@ -1543,63 +1543,60 @@ const palabra = ref('Ingresa Una palabra')
 
 
 
-####################################completar
-
 <script setup lang="js">
-/*Desarrolla una aplicación que muestre una lista 
-de productos y permita agregar nuevos productos.*/
 
-import {ref} from 'vue'
+import { ref } from 'vue'
 
 const carrito = ref([]);
 
+
 const Compra = (producto) => {
-  carrito.value.push(producto)
+    carrito.value.push(producto)
+    producto.stock = producto.stock-1
 }
 
+
+
 const ProductLibrary = [
-  {
-    name: "Lápiz",
-    price: 1,
-    stock: 50,
-    url  :  "https://libreriairbe.com/wp-content/uploads/2019/09/L%C3%A1piz-de-Dibujo-Castell-9000-Faber-Castell-6B-600x600.jpg"
-  },
-  {
-    name: "Cuaderno",
-    price: 3,
-    stock: 30,
-    url  :  "https://libreriairbe.com/wp-content/uploads/2020/09/Cuaderno-Anillado-Carta-WINNER-con-100-Hojas-Cuadriculadas-5-mm-Azul-500x500.jpg"
-  },
-  {
-    name: "Bolígrafo",
-    price: 2,
-    stock: 40,
-    url  :  "https://libreriairbe.com/wp-content/uploads/2020/12/Portagomas-Borrador-Retractil-Maped-.jpg"
-  },
-  {
-    name: "Goma de borrar",
-    price: 0.5,
-    stock: 60,
-    url  :  "https://libreriairbe.com/wp-content/uploads/2019/06/Borradores-con-Protector-Faber-Castell-Pastel-Colores.jpg"
-  }
+    {
+        name: "Lápiz",
+        price: 1,
+        stock: 50,
+        url: "https://libreriairbe.com/wp-content/uploads/2019/09/L%C3%A1piz-de-Dibujo-Castell-9000-Faber-Castell-6B-600x600.jpg"
+    },
+    {
+        name: "Cuaderno",
+        price: 3,
+        stock: 30,
+        url: "https://libreriairbe.com/wp-content/uploads/2020/09/Cuaderno-Anillado-Carta-WINNER-con-100-Hojas-Cuadriculadas-5-mm-Azul-500x500.jpg"
+    },
+    {
+        name: "Bolígrafo",
+        price: 2,
+        stock: 40,
+        url: "https://libreriairbe.com/wp-content/uploads/2020/12/Portagomas-Borrador-Retractil-Maped-.jpg"
+    },
+    {
+        name: "Goma de borrar",
+        price: 0.5,
+        stock: 60,
+        url: "https://libreriairbe.com/wp-content/uploads/2019/06/Borradores-con-Protector-Faber-Castell-Pastel-Colores.jpg"
+    }
 ];
 
 
 </script>
 
 <template>
-  <ul v-for="index in ProductLibrary" :key="index.name">
-    <li>{{ index.name}}  {{ index.price}} : {{ index.stock }} <img :src="index.url" style="width: 50px; height: 50px;"> <button @click="Compra()">Añadir</button></li>
-  </ul>
+    <ul v-for="producto in ProductLibrary" :key="producto.name">
+        <li>{{ producto.name }} {{ producto.price }} : {{ producto.stock }} <img :src="producto.url"
+                style="width: 50px; height: 50px;"> <button @click="Compra(producto)">Añadir</button></li>
+    </ul>
 
-  <ol v-for="producto in carrito" :key="producto.name">
-    <li>{{ producto.name }} : {{ producto.price}}</li>
-  </ol>
-
+    <ol v-for="producto in carrito" :key="producto.name">
+        <li>{{ producto.name }} : {{ producto.price }}</li>
+    </ol>
 </template>
 
 
-<style scoped>  
-
-
-</style>
+<style scoped></style>

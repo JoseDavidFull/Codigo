@@ -1,12 +1,12 @@
-<template>
-    <router-link to="/">About</router-link>
-    <router-link to="/product">Product</router-link>
+<script setup lang="js">
 
-    <RouterView></RouterView>
-</template>
 
-<script setup>
 
 </script>
 
-<style  scoped></style>
+<template>
+    
+</template>
+
+
+<style scoped></style>

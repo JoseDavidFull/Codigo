@@ -3,7 +3,7 @@ function datos() {
     const apellido = document.getElementById("apellido").value
     const edad = document.getElementById("edad").value
     const valor = 1998;
-    const resul = valor-edad; 
+    const resul = edad-valor; 
     const resultado = name +" "+ apellido;
     document.getElementById("resultado").innerHTML = resultado + "Tu año de nacimiento es: "+ resul;
 }
