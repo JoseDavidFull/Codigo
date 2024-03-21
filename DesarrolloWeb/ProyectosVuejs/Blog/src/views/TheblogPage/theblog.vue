@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div id="princial">
+    <div class="princial">
 
         <router-link :to="{ name: 'allposts' }">All Posts</router-link>
         <router-link :to="{ name: 'fashion' }">Fashion</router-link>
@@ -20,9 +20,9 @@
 
 
 <style scoped>
-
-#principal{
+.principal {
     display: flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start;
 }
 </style>
