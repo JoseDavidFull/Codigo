@@ -1,49 +1,59 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from "vue"
 
-const Aleatorio = Math.floor(Math.random() * 3);
 
-const piedra = ref(0);
-const papel = ref(1);
-const tijera = ref(2);
 
-function Elegir(opcion) {
-    if (Aleatorio === 0) {
-        piedra.value = opcion;
-    } else if (Aleatorio === 1) {
-        papel.value = opcion;
-    } else {
-        tijera.value = opcion;
-    }
+const contador = ref(0)
+
+const Increment = () =>{
+    contador.value++
 }
+
+const Decremento = () =>{
+    contador.value--
+}
+
+const Reset = () =>{
+    contador.value = contador.value = 0
+}
+
+const array = ref([])
+
+const Add = (valor) =>{
+    array.value.push(valor)
+}
+
 </script>
 
 <template>
-    <p class="centrar">Elige una opcion</p>
+    <h1 :class="{red : contador < 0, white : contador ==0, green : contador > 0}">Hola Vuejs Dinamico</h1>
     <br>
-    <br>
-    <div class="nav">
-        <button @click="Elegir(0)">Piedra</button>
-        <button @click="Elegir(1)">Papel</button>
-        <button @click="Elegir(2)">Tijera</button>
-        <h1 v-if="Aleatorio === piedra">Ganaste, PC eligió Piedra </h1>
-        <h1 v-else-if="Aleatorio === papel">Ganaste, PC eligió Papel </h1>
-        <h1 v-else-if="Aleatorio === tijera">Ganaste, PC eligió Tijera </h1>
+    <div>
+        <button @click="Increment">Incremento</button>
+        <button @click="Decremento">Decremento</button>
+        <button @click="Reset">Reset</button>
+        <button @click="Add(contador)">Add</button>
     </div>
+    <h1 :class="{red : contador < 0, white : contador ==0, green : contador > 0}">{{ contador }}</h1>
+    
+    <ul>
+        <li v-for="index in array" :key="index" :class="{red : contador < 0, white : contador ==0, green : contador > 0}">
+            {{ index}}
+        </li>
+    </ul>
 </template>
 
 
 <style scoped>
-
-.nav{
-    display: flex;
-    flex-direction: row;
-    gap: 10px 30px;    
+.red{
+    color: red;
 }
 
-.centrar{
-    display: flex;
-    justify-content: center;
+.green{
+    color: green;
+}
+
+.white{
     color: white;
 }
 
